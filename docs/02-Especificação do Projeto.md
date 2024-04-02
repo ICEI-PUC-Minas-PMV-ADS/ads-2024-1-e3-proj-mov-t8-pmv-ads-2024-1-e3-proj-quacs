@@ -81,36 +81,31 @@ Obs.: todas as informações para gerar os indicadores devem estar no diagrama d
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O aplicativo deve permitir que os usuários criem e gerencie perfis personalizados | ALTA | 
+|RF-002| O aplicativo deve permitir que os usuários descubram e se juntem a comunidades de interesse   | MÉDIA |
+|RF-003| O aplicativo deve permitir que usuários publiquem, visualizem e interajam com o conteúdo dentro de suas comunidades selecionadas | ALTA |
+|RF-004| O aplicativo deve fornecer recomendações de conteúdo e comunidades com base na preferência e comportamento do usuário | ALTA |
+|RF-005| O aplicativo deve permitir que os usuários personalizem suas configurações de conteúdo e notificações | ALTA |
+|RF-006| O aplicativo deve permitir que os usuários filtrem e personalize o conteúdo que veem com base em seus interesses pessoais | ALTA |
+|RF-007| O aplicativo deve fornecer ferramentas para facilitar a interação e o engajamento dentro das comunidades, como opções para comentar, curtir, compartilhar e salvar postagens | ALTA |
+|RF-008| O aplicativo deve oferecer recursos de pesquisa robustos para ajudar os usuários a descobrir novas comunidades e conteúdo | ALTA |
+|RF-009| O aplicativo deve permitir que os usuários configurem notificações para atualizações de suas comunidades e conteúdo de interesse | ALTA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-001| O aplicativo deve ser fácil de usar e navegar, com uma interface de usuário intuitiva | MÉDIA | 
+|RNF-002| O aplicativo deve ser responsivo e eficiente, com tempos de carregamento mínimos |  BAIXA | 
+|RNF-003| O aplicativo deve ser seguro, proteger as informações pessoais do usuário |  BAIXA | 
+|RNF-004| O aplicativo deve ser acessível e oferecer uma experiência de usuário consistente em diferentes tipos de dispositivos e tamanhos de tela |  BAIXA | 
+|RNF-005| O aplicativo deve ser projetado de forma a ser intuitivo para o público-alvo, com uma curva de aprendizado mínima |  BAIXA | 
+|RNF-006| O aplicativo deve ser capaz de escalar e lidar com muitos usuários e comunidades sem degradação do desempenho |  BAIXA | 
 
 ## Restrições
 
@@ -118,14 +113,12 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|01| O aplicativo deve estar em conformidade com todas as leis e regulamentos de privacidade e proteção de dados aplicáveis |
+|02| O aplicativo deve ser desenvolvido dentro do prazo e do orçamento estabelecidos        |
+|03| O aplicativo deve ser capaz de suportar um grande número de usuários simultâneos sem degradação do desempenho        |
+|04| O aplicativo deve ser desenvolvido levando em consideração as preferências e comportamentos do público-alvo, conforme descrito na segmentação B2C |
+|05| O aplicativo deve ser projetado e desenvolvido de acordo com as melhores práticas de design e desenvolvimento de aplicativos móveis        |
+|06| O aplicativo deve ser lançado inicialmente em áreas urbanas e grandes centros, conforme especificado na localização do público-alvo        |
 
 ## Diagrama de Casos de Uso
 
