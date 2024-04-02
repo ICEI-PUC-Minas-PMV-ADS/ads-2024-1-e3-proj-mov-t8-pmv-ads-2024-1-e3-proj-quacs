@@ -72,11 +72,19 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 
 ## Indicadores de Desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
+Segue abaixo os Indicadores de Desempenho e quadro descritivo.
+1.	Número de Usuários Ativos;
+2.	Taxa de Retenção de Usuários;
+3.	Tempo Médio Gasto no Aplicativo;
+4.	Taxa de Conversão;
+5.	Satisfação do Usuário.
 
-Usar o seguinte modelo: 
+### Quadro descritivo:
 
-![Indicadores de Desempenho](img/02-indic-desemp.png)
+| Indicador | Objetivo | Descrição | Cálculo | Fonte de Dados | Perspectiva |
+|-----------|----------|-----------|---------|----------------|-------------|
+| Número de Usuários Ativos | Medir o número de usuários que estão ativamente usando o aplicativo em um determinado período. | Avaliar e medir número de usuário ativos, podendo ser dividido em usuário ativo diário, semanal e mensal. |   | Usuários cadastrados no sistema Quacs. | Quantificar atividade no aplicativo, verificar frequência de usabilidade. |
+
 Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
 
 ## Requisitos
