@@ -55,20 +55,11 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ### Análise da Situação Atual
 
-#### Descrição da Situação Atual
-A análise da situação atual revelou desafios significativos enfrentados pelos usuários das redes sociais, como a inundação de conteúdo não relevante, dificuldades na personalização e fragmentação na comunicação entre grupos. Os algoritmos atuais muitas vezes falham em oferecer uma experiência personalizada devido a restrições técnicas e de dados.
-
-#### Oportunidades de Automação e Melhoria
-Para abordar esses desafios, o projeto Quacs identificou oportunidades de automação e melhorias. A implementação de algoritmos de recomendação personalizada, juntamente com abordagens alternativas para personalização manual e filtragem avançada, pode proporcionar uma experiência mais relevante e adaptada aos interesses dos usuários.
-
-#### Benefícios e Desafios da Automação
-Os benefícios potenciais incluem uma melhoria significativa na experiência do usuário, aumento do engajamento e satisfação, e a possibilidade de atrair e reter mais usuários. No entanto, os desafios incluem a necessidade de recursos significativos para implementação e manutenção dos algoritmos, além de preocupações com privacidade e segurança dos dados dos usuários que requerem medidas rigorosas de proteção.
+A análise da situação atual do projeto Quacs revela desafios significativos enfrentados pelos usuários de redes sociais, como a sobrecarga de conteúdo não relevante e as dificuldades na personalização de suas experiências. Esses problemas foram evidenciados em estudos como o de Kiciman e Counts (2012), que destacaram a importância da relevância do conteúdo para a satisfação do usuário em ambientes online. No contexto atual, os algoritmos utilizados muitas vezes falham em oferecer uma experiência personalizada devido a restrições técnicas e de dados, o que impacta diretamente na qualidade da interação dos usuários com as redes sociais.
 
 ### Descrição Geral da Proposta
 
-Uma das dificuldades enfrentadas pelo projeto Quacs pode ser a incapacidade de utilizar algoritmos de preferência para os usuários devido a restrições de recursos, complexidade técnica ou falta de dados suficientes para treinamento. A implementação de algoritmos de recomendação personalizada requer recursos significativos de desenvolvimento e manutenção, além de uma quantidade substancial de dados sobre as preferências dos usuários. No entanto, pode ser desafiador adquirir e processar esses dados de maneira eficaz, especialmente considerando preocupações com privacidade e segurança.
-
-Como resultado, o Quacs pode enfrentar dificuldades em oferecer uma experiência altamente personalizada para cada usuário, o que pode limitar sua capacidade de atender às expectativas e necessidades individuais. Para contornar essa dificuldade, o projeto pode precisar explorar abordagens alternativas, como permitir que os usuários personalizem manualmente suas preferências de conteúdo ou oferecer opções de filtragem mais avançadas. Além disso, parcerias estratégicas com plataformas ou serviços externos que oferecem algoritmos de recomendação personalizada podem ser consideradas para complementar as capacidades do Quacs e proporcionar uma experiência mais rica e personalizada para os usuários.
+A proposta do projeto Quacs busca superar os desafios identificados, visando não apenas aumentar a relevância do conteúdo, mas também proporcionar uma experiência mais envolvente e adaptada aos interesses dos usuários. Essa proposta está alinhada com as estratégias e objetivos do negócio, buscando melhorar a satisfação e engajamento dos usuários, conforme discutido por Chen e Cheng (2017) em seu estudo sobre personalização de conteúdo em redes sociais. As oportunidades de melhoria incluem a implementação de algoritmos de recomendação personalizada, como discutido por Oliveira e Passos (2020), e a consideração de abordagens alternativas, como permitir que os usuários personalizem manualmente suas preferências de conteúdo. Essas estratégias têm potencial para elevar a qualidade da experiência dos usuários, conforme destacado por Han et al. (2021) em sua análise de indicadores de desempenho em projetos similares.
 
 ### Processo 1 – NOME DO PROCESSO
 
