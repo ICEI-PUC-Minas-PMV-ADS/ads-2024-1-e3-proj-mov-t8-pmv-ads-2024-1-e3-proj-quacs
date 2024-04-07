@@ -14,7 +14,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
    - **Conhecimento em Tecnologia:** Básico
    - **Uso de Redes Sociais:** Regular, principalmente para se manter em contato com amigos e seguir páginas de interesse.
    - **Interesses:** Moda, viagens e fotografia
-   - **Comportamento:** Ana busca uma experiência simples e intuitiva nas redes sociais, preferindo conteúdos que sejam relevantes aos seus interesses sem a necessidade de configurações complexas.
+   - **Comportamento:** Ana utiliza redes sociais regularmente para se manter em contato com amigos e seguir páginas de interesse, especialmente relacionadas a moda, viagens e fotografia. Ela prefere uma experiência simples e intuitiva, valorizando conteúdos relevantes para seus interesses sem a necessidade de configurações complexas. Sua acessibilidade inclui a preferência por interfaces claras.
      
 2. **Pedro, o Entusiasta de Tecnologia:**
    - **Idade:** 30 anos
@@ -22,7 +22,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
    - **Conhecimento em Tecnologia:** Avançado
    - **Uso de Redes Sociais:** Ativo em várias plataformas, tanto para networking profissional quanto para interesses pessoais.
    - **Interesses:** Tecnologia, games e programação
-   - **Comportamento:** Pedro está sempre em busca de novidades tecnológicas e ferramentas que otimizem sua experiência online. Ele valoriza a personalização e está disposto a experimentar novas plataformas que ofereçam recursos avançados.
+   - **Comportamento:** Pedro  é ativo em várias redes sociais para networking profissional e interesses pessoais, como tecnologia, games e programação. Pedro busca por novidades tecnológicas e valoriza a personalização, e está disposto a experimentar novas plataformas que ofereçam recursos avançados.
 
 3. **Mariana, a Profissional de Marketing:**
    - **Idade:** 35 anos
@@ -31,7 +31,14 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
    - **Uso de Redes Sociais:** Estratégico, para promover marcas e produtos, bem como monitorar tendências e engajamento.
    - **Interesses:** Marketing digital, análise de dados e branding
    - **Comportamento:** Mariana utiliza as redes sociais como parte de sua estratégia de trabalho, buscando ferramentas que facilitem a segmentação de público e a análise de métricas de desempenho. Ela valoriza plataformas que ofereçam insights detalhados sobre o comportamento do usuário e o impacto das campanhas.
-
+  
+4. **Carlos, o Estudante com Deficiência Visual:**
+   - **Idade:** 20 anos
+   - **Profissão:** Estudante universitário
+   - **Conhecimento em Tecnologia:** Intermediário
+   - **Uso de Redes Sociais:** Regular, principalmente para acesso a informações acadêmicas e interação com colegas.
+   - **Interesses:** Ciência, música e literatura
+   - **Comportamento:** Carlos é um estudante universitário com deficiência visual que depende de tecnologias assistivas, como leitores de tela e contraste ajustável, para acessar conteúdos online. Ele valoriza plataformas que são acessíveis e oferecem suporte adequado para sua necessidade, permitindo uma experiência inclusiva e significativa.
 
 ## Histórias de Usuários
 
@@ -42,7 +49,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Ana, a Usuária Casual| Poder personalizar minha feed de acordo com meus interesses          |  Ver apenas conteúdos relevantes para mim               |
 |Pedro, o Entusiasta de Tecnologia       | Ter acesso a configurações avançadas de personalização da minha feed                 | Adaptar a experiência às minhas preferências específicas |
 | Mariana, a Profissional de Marketing | Poder segmentar o público-alvo das minhas publicações e campanhas | Direcionar melhor meus esforços de marketing |
-
+| Carlos, o Estudante com Deficiência Visual | Acesso a recursos de acessibilidade, como leitor de tela e contraste ajustável | Garantir uma experiência inclusiva e eficiente |
 
 ## Modelagem do Processo de Negócio 
 
