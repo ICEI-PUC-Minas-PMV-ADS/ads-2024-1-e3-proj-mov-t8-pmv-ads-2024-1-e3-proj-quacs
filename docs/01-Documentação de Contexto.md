@@ -23,8 +23,13 @@ A escolha de trabalhar com esta aplicação é motivada pela crescente demanda p
 
 Os objetivos específicos foram escolhidos com base na importância de compreender as necessidades dos usuários e projetar uma interface de usuário intuitiva que permita uma experiência de navegação fluida e amigável. Identificar as principais necessidades e preferências dos usuários é essencial para garantir que o aplicativo atenda às expectativas e ofereça uma experiência significativa. Além disso, projetar uma interface de usuário intuitiva é crucial para garantir que os usuários possam facilmente selecionar e alternar entre diferentes comunidades de interesse, promovendo uma interação mais fluida e satisfatória com a aplicação.
 
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+## Impacto Social e Ético
 
+O projeto Quacs visa impactar positivamente a vida das pessoas de maneiras significativas no âmbito social e ético. Ao oferecer uma experiência de rede social mais personalizada e relevante, a plataforma busca promover conexões mais significativas entre os usuários, facilitando a descoberta de conteúdos e comunidades alinhados aos seus interesses. Isso não apenas aumenta a satisfação dos usuários, mas também promove interações mais engajadas e enriquecedoras dentro da plataforma.
+
+Além disso, o Quacs tem como objetivo contribuir para um ambiente online mais saudável e inclusivo. Ao combater a disseminação de desinformação, promover o respeito à diversidade e criar um espaço acolhedor para todos os usuários, a plataforma busca fomentar uma cultura digital ética e responsável. Isso fortalece os laços comunitários na plataforma e influencia positivamente outras empresas a adotarem práticas semelhantes de responsabilidade social e ética digital.
+
+Por fim, o Quacs destaca-se por sua abordagem transparente, segura e ética em relação à proteção de dados dos usuários e à garantia de autonomia e empoderamento dos usuários em suas interações online. Esses elementos combinados posicionam o projeto como uma referência em termos de impacto social positivo e práticas éticas na indústria de redes sociais, criando um ambiente digital mais positivo e consciente para todos os usuários.
 
 ## Público-Alvo
 
@@ -43,7 +48,3 @@ Os usuários da aplicação abrangem diversos perfis, desde o usuário casual de
 * **Necessidades:** Buscam uma experiência de rede social que minimize o ruído informativo, oferecendo uma navegação focada em comunidades de interesse sem a necessidade de filtrar manualmente grandes volumes de conteúdo não relevante.
 * **Segmentação B2C:**
 Jovens adultos, estudantes ou profissionais, interessados em um consumo de mídia social mais direcionado e significativo. Valorizam a personalização, a facilidade de uso, e a capacidade de conectar-se rapidamente com comunidades específicas.
-
-
-> Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
