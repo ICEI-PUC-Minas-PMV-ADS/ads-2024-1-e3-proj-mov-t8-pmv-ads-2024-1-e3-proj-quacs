@@ -55,9 +55,14 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ### Análise da Situação Atual
 
-O projeto Quacs surge em resposta aos problemas enfrentados pelos usuários das redes sociais atuais, que frequentemente se deparam com uma inundação de conteúdo não relevante e fragmentação na comunicação entre diferentes grupos. O modelo atual das redes sociais envolve algoritmos que determinam o que é exibido nas feeds dos usuários, mas muitas vezes falham em oferecer uma experiência personalizada e significativa. Além disso, encontrar e participar de comunidades específicas dentro das redes sociais pode ser uma tarefa desafiadora e demorada.
+#### Descrição da Situação Atual
+A análise da situação atual revelou desafios significativos enfrentados pelos usuários das redes sociais, como a inundação de conteúdo não relevante, dificuldades na personalização e fragmentação na comunicação entre grupos. Os algoritmos atuais muitas vezes falham em oferecer uma experiência personalizada devido a restrições técnicas e de dados.
 
-O Quacs busca resolver esses problemas oferecendo uma plataforma inovadora que simplifica a descoberta, interação e engajamento com comunidades e conteúdos de interesse dos usuários. Ao priorizar a personalização e integração eficaz do conteúdo de diferentes grupos, o Quacs visa oferecer uma experiência mais relevante e significativa, promovendo uma interação mais rica e focada dentro das redes sociais. 
+#### Oportunidades de Automação e Melhoria
+Para abordar esses desafios, o projeto Quacs identificou oportunidades de automação e melhorias. A implementação de algoritmos de recomendação personalizada, juntamente com abordagens alternativas para personalização manual e filtragem avançada, pode proporcionar uma experiência mais relevante e adaptada aos interesses dos usuários.
+
+#### Benefícios e Desafios da Automação
+Os benefícios potenciais incluem uma melhoria significativa na experiência do usuário, aumento do engajamento e satisfação, e a possibilidade de atrair e reter mais usuários. No entanto, os desafios incluem a necessidade de recursos significativos para implementação e manutenção dos algoritmos, além de preocupações com privacidade e segurança dos dados dos usuários que requerem medidas rigorosas de proteção.
 
 ### Descrição Geral da Proposta
 
