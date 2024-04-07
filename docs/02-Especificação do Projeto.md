@@ -97,44 +97,144 @@ Obs.: todas as informações para gerar os indicadores devem estar no diagrama d
 
 ## Requisitos
 
+A técnica de priorização de requisitos é crucial para o sucesso de um projeto de software, pois ajuda a identificar e focar nos requisitos mais importantes e prioritários para atender às necessidades dos usuários e do negócio. Existem várias técnicas de priorização de requisitos disponíveis, como MoSCoW, Analytic Hierarchy Process (AHP), Kano Model, entre outras. Neste caso, optamos por utilizar a técnica MoSCoW devido à sua simplicidade e eficácia comprovada.
+
+### Técnica de Priorização: MoSCoW
+
+A técnica MoSCoW é uma abordagem amplamente utilizada que classifica os requisitos em quatro categorias principais:
+
+- **Must Have (M):** Requisitos essenciais que devem ser entregues na primeira versão do produto, pois são críticos para o funcionamento básico do sistema.
+- **Should Have (S):** Requisitos importantes, porém não críticos para a primeira entrega. São considerados prioritários, mas podem ser adiados se necessário.
+- **Could Have (C):** Requisitos desejáveis que não são vitais para a primeira entrega, mas podem agregar valor ao produto se implementados.
+- **Won't Have (W):** Requisitos que não serão incluídos na primeira versão do produto, sendo considerados para futuras melhorias ou versões.
+
+### Justificativa da Utilização do MoSCoW
+
+A escolha da técnica MoSCoW para a priorização de requisitos no projeto Quacs foi baseada em sua simplicidade, clareza e capacidade de lidar com diferentes níveis de prioridade de forma direta. Além disso, a técnica MoSCoW é amplamente reconhecida na indústria de software e possui um bom suporte de ferramentas e recursos para sua implementação.
+
+Comparando com outras técnicas, como o AHP que é mais complexo e requer uma análise mais aprofundada de critérios e pesos, o MoSCoW se destaca pela sua facilidade de entendimento e aplicação prática. No contexto do projeto Quacs, onde é crucial identificar rapidamente os requisitos essenciais para o lançamento inicial do aplicativo, o MoSCoW se mostrou a escolha mais adequada.
+
+### Referências e Estudos
+
+1. Cockburn, Alistair. "Using the MoSCoW Method". Agile Software Development, 2004.
+2. Leffingwell, Dean. "Scaled Agile Framework: MoSCoW Prioritization". Scaled Agile, 2020.
+3. Sommerville, Ian. "Software Engineering". Pearson, 2016.
+
+Esses estudos e referências destacam a eficácia e a aplicabilidade do MoSCoW em projetos de software, reforçando sua utilização como uma técnica confiável de priorização de requisitos.
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| O aplicativo deve permitir que os usuários criem e gerencie perfis personalizados | ALTA | 
-|RF-002| O aplicativo deve permitir que os usuários descubram e se juntem a comunidades de interesse   | MÉDIA |
-|RF-003| O aplicativo deve permitir que usuários publiquem, visualizem e interajam com o conteúdo dentro de suas comunidades selecionadas | ALTA |
-|RF-004| O aplicativo deve fornecer recomendações de conteúdo e comunidades com base na preferência e comportamento do usuário | ALTA |
-|RF-005| O aplicativo deve permitir que os usuários personalizem suas configurações de conteúdo e notificações | ALTA |
-|RF-006| O aplicativo deve permitir que os usuários filtrem e personalize o conteúdo que veem com base em seus interesses pessoais | ALTA |
-|RF-007| O aplicativo deve fornecer ferramentas para facilitar a interação e o engajamento dentro das comunidades, como opções para comentar, curtir, compartilhar e salvar postagens | ALTA |
-|RF-008| O aplicativo deve oferecer recursos de pesquisa robustos para ajudar os usuários a descobrir novas comunidades e conteúdo | ALTA |
-|RF-009| O aplicativo deve permitir que os usuários configurem notificações para atualizações de suas comunidades e conteúdo de interesse | ALTA |
+|RF-001| O aplicativo deve permitir que os usuários criem contas e façam login para acessar o sistema. | ALTA | 
+|RF-002| Os usuários devem poder criar, editar e excluir seus perfis, incluindo informações como nome, foto e interesses.   | Alta |
+|RF-003| Os usuários devem poder descobrir e se juntar a comunidades de interesse dentro do aplicativo. | ALTA |
+|RF-004| Os usuários devem poder publicar, visualizar e interagir com o conteúdo dentro das comunidades às quais estão conectados. | ALTA |
+|RF-005| O aplicativo deve fornecer recomendações de conteúdo e comunidades com base nas preferências e comportamento do usuário. | MÉDIA |
+|RF-006| Os usuários devem poder personalizar suas configurações de conteúdo, notificações e preferências de forma granular. | ALTA |
+|RF-007| O aplicativo deve oferecer ferramentas para facilitar a interação social, como comentários, curtidas, compartilhamentos e salvamento de postagens. | ALTA |
+|RF-008| Os usuários devem poder realizar pesquisas para descobrir novas comunidades e conteúdos dentro do aplicativo. | MÉDIA |
+|RF-009| Os usuários devem poder configurar notificações para receber atualizações de suas comunidades e conteúdo de interesse. | MÉDIA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O aplicativo deve ser fácil de usar e navegar, com uma interface de usuário intuitiva | MÉDIA | 
-|RNF-002| O aplicativo deve ser responsivo e eficiente, com tempos de carregamento mínimos |  BAIXA | 
-|RNF-003| O aplicativo deve ser seguro, proteger as informações pessoais do usuário |  BAIXA | 
-|RNF-004| O aplicativo deve ser acessível e oferecer uma experiência de usuário consistente em diferentes tipos de dispositivos e tamanhos de tela |  BAIXA | 
-|RNF-005| O aplicativo deve ser projetado de forma a ser intuitivo para o público-alvo, com uma curva de aprendizado mínima |  BAIXA | 
-|RNF-006| O aplicativo deve ser capaz de escalar e lidar com muitos usuários e comunidades sem degradação do desempenho |  BAIXA | 
+|RNF-001| Garante que o aplicativo seja fácil de usar e navegar para os usuários. | ALTA | 
+|RNF-002| Assegura que o aplicativo seja responsivo e rápido, proporcionando uma experiência fluida.|  ALTA | 
+|RNF-003| Protege as informações dos usuários e cumpre com as normas de privacidade e segurança. |  ALTA | 
+|RNF-004| Garante que o aplicativo seja acessível a todos os usuários, independentemente de suas necessidades especiais. |  ALTA | 
+|RNF-005| Torna o aplicativo intuitivo para novos usuários, facilitando o uso sem uma curva de aprendizado complexa. | MÉDIA  | 
+|RNF-006| Garante que o aplicativo possa lidar com um grande número de usuários sem comprometer o desempenho. |  ALTA | 
 
+### Requisitos Funcionais
+
+1. **RF-001: Autenticação de Usuário**
+   - **M (Must Have):** Essencial para garantir que apenas usuários autorizados tenham acesso ao sistema.
+
+2. **RF-002: Gerenciamento de Perfil**
+   - **M (Must Have):** Permite aos usuários personalizar e controlar suas informações e configurações no aplicativo.
+
+3. **RF-003: Descoberta de Comunidades**
+   - **M (Must Have):** Permite aos usuários encontrar e se conectar com comunidades de interesse.
+
+4. **RF-004: Interação com Conteúdo de Comunidades**
+   - **M (Must Have):** Habilita os usuários a participarem ativamente das comunidades, compartilhando e interagindo com conteúdos.
+
+5. **RF-005: Recomendação de Conteúdo**
+   - **S (Should Have):** Fornece recomendações personalizadas de conteúdo e comunidades com base nas preferências do usuário.
+
+6. **RF-006: Personalização de Configurações**
+   - **M (Must Have):** Permite aos usuários ajustarem as configurações do aplicativo de acordo com suas preferências individuais.
+
+7. **RF-007: Interação Social**
+   - **M (Must Have):** Oferece ferramentas para interação social, como comentários, curtidas e compartilhamentos de postagens.
+
+8. **RF-008: Pesquisa de Conteúdo**
+   - **S (Should Have):** Facilita a busca por novos conteúdos e comunidades dentro do aplicativo.
+
+9. **RF-009: Configuração de Notificações**
+   - **S (Should Have):** Permite aos usuários gerenciarem suas notificações e receberem atualizações relevantes.
+
+### Requisitos Não Funcionais
+
+1. **RNF-001: Usabilidade e Navegabilidade**
+   - **M (Must Have):** Garante que o aplicativo seja fácil de usar e navegar para os usuários.
+
+2. **RNF-002: Desempenho e Tempo de Resposta**
+   - **M (Must Have):** Assegura que o aplicativo seja responsivo e rápido, proporcionando uma experiência fluida.
+
+3. **RNF-003: Segurança e Privacidade**
+   - **M (Must Have):** Protege as informações dos usuários e cumpre com as normas de privacidade e segurança.
+
+4. **RNF-004: Acessibilidade**
+   - **M (Must Have):** Garante que o aplicativo seja acessível a todos os usuários, independentemente de suas necessidades especiais.
+
+5. **RNF-005: Intuitividade e Curva de Aprendizado**
+   - **S (Should Have):** Torna o aplicativo intuitivo para novos usuários, facilitando o uso sem uma curva de aprendizado complexa.
+
+6. **RNF-006: Escalabilidade**
+   - **M (Must Have):** Garante que o aplicativo possa lidar com um grande número de usuários sem comprometer o desempenho.
+
+  
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O aplicativo deve estar em conformidade com todas as leis e regulamentos de privacidade e proteção de dados aplicáveis |
-|02| O aplicativo deve ser desenvolvido dentro do prazo e do orçamento estabelecidos        |
-|03| O aplicativo deve ser capaz de suportar um grande número de usuários simultâneos sem degradação do desempenho        |
-|04| O aplicativo deve ser desenvolvido levando em consideração as preferências e comportamentos do público-alvo, conforme descrito na segmentação B2C |
-|05| O aplicativo deve ser projetado e desenvolvido de acordo com as melhores práticas de design e desenvolvimento de aplicativos móveis        |
-|06| O aplicativo deve ser lançado inicialmente em áreas urbanas e grandes centros, conforme especificado na localização do público-alvo        |
+|01| Conformidade Legal e Regulatória |
+|02| Prazo e Orçamento        |
+|03| Capacidade de Escalabilidade        |
+|04| Considerações sobre o Público-Alvo |
+|05| Melhores Práticas de Design e Desenvolvimento        |
+|06| Acessibilidade e Inclusão        |
+|07| Integração de Feedback        |
+
+### Restrições do Projeto Quacs
+
+1. **R01: Conformidade Legal e Regulatória**
+   - O aplicativo deve seguir todas as leis e regulamentos de privacidade e proteção de dados relevantes para garantir a segurança e a integridade das informações dos usuários.
+
+2. **R02: Prazo e Orçamento**
+   - O desenvolvimento do aplicativo deve ser concluído dentro do prazo e do orçamento definidos para o projeto, assegurando uma entrega eficiente e dentro dos recursos disponíveis.
+
+3. **R03: Capacidade de Escalabilidade**
+   - O sistema deve ser dimensionado para suportar um grande número de usuários simultâneos sem comprometer significativamente o desempenho, mantendo uma experiência fluida e responsiva.
+
+4. **R04: Considerações sobre o Público-Alvo**
+   - O desenvolvimento do aplicativo deve levar em consideração as preferências e comportamentos do público-alvo identificados na segmentação B2C, garantindo uma experiência personalizada e relevante para os usuários.
+
+5. **R05: Melhores Práticas de Design e Desenvolvimento**
+   - O aplicativo deve ser projetado e desenvolvido de acordo com as melhores práticas de design e desenvolvimento de aplicativos móveis para garantir uma interface intuitiva, atraente e de fácil utilização.
+
+6. **R07: Acessibilidade e Inclusão**
+   - O aplicativo deve ser acessível a todos os usuários, incluindo aqueles com necessidades especiais, seguindo diretrizes de acessibilidade e garantindo uma experiência consistente em diferentes dispositivos e plataformas.
+
+7. **R08: Integração de Feedback**
+   - Deve ser implementado um sistema eficiente para coleta de feedback dos usuários e integração de melhorias ao aplicativo, visando constantemente aprimorar a experiência do usuário e atender às suas necessidades em evolução.
+
+Essas restrições refletem os aspectos cruciais que devem ser considerados durante o desenvolvimento e a implantação do projeto Quacs, garantindo o cumprimento de requisitos legais, a qualidade da experiência do usuário e o sucesso geral do aplicativo.
 
 ## Diagrama de Casos de Uso
 
