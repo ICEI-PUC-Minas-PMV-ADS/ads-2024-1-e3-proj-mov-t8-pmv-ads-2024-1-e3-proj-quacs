@@ -65,7 +65,7 @@ A proposta do projeto Quacs busca superar os desafios identificados, visando nã
 
 Abaixo temos as demonstrações dos processos presentes na plataforma, com a atuação definida de cada atoar e como é o retorno a cada um: 
 
-![Processos](/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/presentation/BPMN/BPMN%20Quacs.svg)
+![Processos](/presentation/BPMN/BPMN%20Quacs.svg)
 
 
 ## Indicadores de Desempenho
