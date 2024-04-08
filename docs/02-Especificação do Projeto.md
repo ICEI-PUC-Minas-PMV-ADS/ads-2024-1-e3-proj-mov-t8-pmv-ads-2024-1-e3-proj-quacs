@@ -130,11 +130,10 @@ Esses estudos e referências destacam a eficácia e a aplicabilidade do MoSCoW e
 |RF-002| Os usuários devem poder criar, editar e excluir seus perfis, incluindo informações como nome, foto e interesses.   | Alta |
 |RF-003| Os usuários devem poder descobrir e se juntar a comunidades de interesse dentro do aplicativo. | ALTA |
 |RF-004| Os usuários devem poder publicar, visualizar e interagir com o conteúdo dentro das comunidades às quais estão conectados. | ALTA |
-|RF-005| O aplicativo deve fornecer recomendações de conteúdo e comunidades com base nas preferências e comportamento do usuário. | MÉDIA |
-|RF-006| Os usuários devem poder personalizar suas configurações de conteúdo, notificações e preferências de forma granular. | ALTA |
-|RF-007| O aplicativo deve oferecer ferramentas para facilitar a interação social, como comentários, curtidas, compartilhamentos e salvamento de postagens. | ALTA |
-|RF-008| Os usuários devem poder realizar pesquisas para descobrir novas comunidades e conteúdos dentro do aplicativo. | MÉDIA |
-|RF-009| Os usuários devem poder configurar notificações para receber atualizações de suas comunidades e conteúdo de interesse. | MÉDIA |
+|RF-005| Os usuários devem poder personalizar suas configurações de conteúdo, notificações e preferências de forma granular. | ALTA |
+|RF-006| O aplicativo deve oferecer ferramentas para facilitar a interação social, como comentários, curtidas, compartilhamentos e salvamento de postagens. | ALTA |
+|RF-007| Os usuários devem poder realizar pesquisas para descobrir novas comunidades e conteúdos dentro do aplicativo. | MÉDIA |
+|RF-008| Os usuários devem poder configurar notificações para receber atualizações de suas comunidades e conteúdo de interesse. | MÉDIA |
 
 ### Requisitos não Funcionais
 
