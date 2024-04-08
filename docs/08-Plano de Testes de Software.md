@@ -1,19 +1,13 @@
 # Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
-
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
- 
-## Ferramentas de Testes (Opcional)
-
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+| Funcionalidade Avaliada |	Grupo de Usuários |	Descrição |
+| --- | --- | --- |
+| RF-001 - Autenticação de Usuário |	Todos os tipos de usuários. |	Verificar se o sistema permite que os usuários criem contas e façam login de forma eficiente e segura. Testar se os usuários são redirecionados corretamente após o login e se as credenciais são validadas corretamente. |
+| RF-002 - Gerenciamento de Perfis	| Todos os tipos de usuários. |	Verificar se os usuários podem criar, editar e excluir seus perfis. Testar a funcionalidade de edição para garantir que todas as informações, como nome, foto e interesses, possam ser atualizadas corretamente. |
+| RF-003 - Descoberta de Comunidades	| Todos os tipos de usuários. |	Verificar se os usuários podem descobrir e se juntar a comunidades de interesse dentro do aplicativo. Testar a funcionalidade de pesquisa de comunidades e o processo de adesão. |
+| RF-004 - Interação com Conteúdo |	Usuários conectados a comunidades. |	Verificar se os usuários podem publicar, visualizar e interagir com o conteúdo dentro das comunidades. Testar funcionalidades como curtidas, comentários e compartilhamentos. |
+| RF-005 - Personalização de Configurações |	Todos os tipos de usuários.	| Verificar se os usuários podem personalizar suas configurações de conteúdo, notificações e preferências de forma granular. Testar a funcionalidade de configurações para garantir que todas as opções estejam disponíveis. |
+| RF-006 - Ferramentas de Interação Social	| Todos os tipos de usuários. |	Verificar se o aplicativo oferece ferramentas para facilitar a interação social, como comentários, curtidas, compartilhamentos e salvamento de postagens. Testar cada uma dessas funcionalidades para garantir que funcionem corretamente. |
+| RF-007 - Pesquisa de Conteúdo	| Todos os tipos de usuários.	Verificar se os usuários podem realizar pesquisas para descobrir novas comunidades e conteúdos dentro do aplicativo. Testar a funcionalidade de pesquisa para garantir resultados precisos. |
+| RF-00 - Configuração de Notificações	| Todos os tipos de usuários. |	Verificar se os usuários podem configurar notificações para receber atualizações de suas comunidades e conteúdo de interesse. Testar as opções de configuração e se as notificações são entregues corretamente. |
