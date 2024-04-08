@@ -79,13 +79,6 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 
 [Projeção de Lucros](https://app.powerbi.com/groups/me/reports/eec5cdad-19ed-49c8-a2ca-691c3cfa8c81/ReportSection?experience=power-bi)
 
-Segue abaixo os Indicadores de Desempenho e quadro descritivo.
-|1.	| Número de Usuários Ativos| 
-|2.|	Taxa de Retenção de Usuários|
-|3.	|Tempo Médio Gasto no Aplicativo|
-|4.	|Taxa de Conversão|
-|5.	|Satisfação do Usuário|
-
 ### Quadro descritivo:
 
 | INDICADOR | OBJETIVO | DESCRIÇÃO | CÁLCULO | FONTE DE DAODS| PERSPECTIVA |
