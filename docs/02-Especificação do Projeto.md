@@ -75,6 +75,10 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 
 ## Indicadores de Desempenho
 
+![Projeção de Lucros](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/a0dfb72e-e499-41a2-a68e-b5f52e96eee2)
+
+[Projeção de Lucros](https://app.powerbi.com/groups/me/reports/eec5cdad-19ed-49c8-a2ca-691c3cfa8c81/ReportSection?experience=power-bi)
+
 Segue abaixo os Indicadores de Desempenho e quadro descritivo.
 |1.	| Número de Usuários Ativos| 
 |2.|	Taxa de Retenção de Usuários|
@@ -264,9 +268,8 @@ Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o ger
 
 ![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
 
-O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
-
-![Gráfico de Gantt](img/02-grafico-gantt.png)
+![Grafico de Gantt](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/3f0836f6-1b8e-4ef7-94c6-8190eb108fb8)
+[Diagrama de Gantt](https://app.powerbi.com/groups/me/reports/45b9c571-4422-41bb-bee7-4483ca6cf743/ReportSection?experience=power-bi)
 
 ## Gerenciamento de Equipe
 
