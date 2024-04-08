@@ -61,17 +61,12 @@ A análise da situação atual do projeto Quacs revela desafios significativos e
 
 A proposta do projeto Quacs busca superar os desafios identificados, visando não apenas aumentar a relevância do conteúdo, mas também proporcionar uma experiência mais envolvente e adaptada aos interesses dos usuários. Essa proposta está alinhada com as estratégias e objetivos do negócio, buscando melhorar a satisfação e engajamento dos usuários, conforme discutido por Chen e Cheng (2017) em seu estudo sobre personalização de conteúdo em redes sociais. As oportunidades de melhoria incluem a implementação de algoritmos de recomendação personalizada, como discutido por Oliveira e Passos (2020), e a consideração de abordagens alternativas, como permitir que os usuários personalizem manualmente suas preferências de conteúdo. Essas estratégias têm potencial para elevar a qualidade da experiência dos usuários, conforme destacado por Han et al. (2021) em sua análise de indicadores de desempenho em projetos similares.
 
-### Processo 1 – NOME DO PROCESSO
+### Processos de interação na plataforma Quacs
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+Abaixo temos as demonstrações dos processos presentes na plataforma, com a atuação definida de cada atoar e como é o retorno a cada um: 
 
-![Processo 1](img/02-bpmn-proc1.png)
+![Processos](/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/presentation/BPMN/BPMN%20Quacs.svg)
 
-### Processo 2 – NOME DO PROCESSO
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
-
-![Processo 2](img/02-bpmn-proc2.png)
 
 ## Indicadores de Desempenho
 
