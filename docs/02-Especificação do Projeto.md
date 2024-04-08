@@ -76,15 +76,15 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 ## Indicadores de Desempenho
 
 Segue abaixo os Indicadores de Desempenho e quadro descritivo.
-1.	Número de Usuários Ativos;
-2.	Taxa de Retenção de Usuários;
-3.	Tempo Médio Gasto no Aplicativo;
-4.	Taxa de Conversão;
-5.	Satisfação do Usuário.
+|1.	| Número de Usuários Ativos| 
+|2.|	Taxa de Retenção de Usuários|
+|3.	|Tempo Médio Gasto no Aplicativo|
+|4.	|Taxa de Conversão|
+|5.	|Satisfação do Usuário|
 
 ### Quadro descritivo:
 
-| Indicador | Objetivo | Descrição | Cálculo | Fonte de Dados | Perspectiva |
+| INDICADOR | OBJETIVO | DESCRIÇÃO | CÁLCULO | FONTE DE DAODS| PERSPECTIVA |
 |-----------|----------|-----------|---------|----------------|-------------|
 | Número de Usuários Ativos | Medir o número de usuários que estão ativamente usando o aplicativo em um determinado período. | Avaliar e medir número de usuário ativos, podendo ser dividido em usuário ativo diário, semanal e mensal. | Fórmulas para calcular os usuários ativos diários (UAD), semanais (UAS) e mensais (UAM): Por exemplo, se você tem 1000 usuários registrados e 250 deles acessaram e realizaram alguma atividade no aplicativo em um dia específico, então o UAD para aquele dia seria 250. | Dados do próprio sistema do aplicativo. | Quantificar atividade no aplicativo, verificar frequência de usabilidade. |
 | Taxa de Retenção de Usuários | Medir a porcentagem de usuários que retornam ao aplicativo após a primeira visita. | A Taxa de Retenção de Usuários auxilia na verificação e indicação de fidelidade dos usuários. Uma alta taxa de retenção indica que os usuários estão encontrando valor no aplicativo. | Taxa de Retenção = (TR) ; Total de Usuários no Final do Período = (TUF); Total de Usuários no Início do Período = (TUI); Novos Usuários durante o Período = (NU). TR = (TUF – NU / TUI) x 100 | Usuários cadastrados no aplicativo Quacs. | Identificar retorno de usuários e avaliar aceitação do aplicativo. |
@@ -238,16 +238,8 @@ Essas restrições refletem os aspectos cruciais que devem ser considerados dura
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+![Casos de Uso](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/8bedc97e-19dc-4763-af14-93b6cc313baf)
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
 
 # Matriz de Rastreabilidade
 
