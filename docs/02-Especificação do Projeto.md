@@ -74,6 +74,12 @@ Abaixo temos as demonstrações dos processos presentes na plataforma, com a atu
 
 [Projeção de Lucros](https://app.powerbi.com/groups/me/reports/eec5cdad-19ed-49c8-a2ca-691c3cfa8c81/ReportSection?experience=power-bi)
 
+### Indicadores
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/9950334b-9809-422b-83eb-d4967cc0c6a4)
+
+### Lucratividade 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/af51779f-6ed7-44c2-8836-4c129f0a63df)
+
 ### Quadro descritivo:
 
 | INDICADOR | OBJETIVO | DESCRIÇÃO | CÁLCULO | FONTE DE DAODS| PERSPECTIVA |
@@ -266,6 +272,5 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 
 ## Gestão de Orçamento
 
-O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/64f8beb8-5ded-4e0a-bb98-49f71bdc8bfa)
 
-![Orçamento](img/02-orcamento.png)
