@@ -1,11 +1,46 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+A visão geral da interação do usuário pelas telas do sistema e o protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes) podem ser apresentados da seguinte maneira:
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
+### Principais Interfaces da Plataforma
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+1. **Tela de Autenticação/Login:**
+   - Esta tela permite que os usuários criem contas e façam login no sistema de forma eficiente e segura, atendendo ao requisito funcional RF-001. Ela foi elaborada com campos claros para inserção de credenciais e botões bem destacados para facilitar a interação.
+
+2. **Perfil do Usuário:**
+   - Nesta interface, os usuários podem criar, editar e excluir seus perfis, incluindo informações como nome, foto e interesses (RF-002). Foram incluídas opções de edição visíveis e intuitivas para garantir que os usuários possam personalizar seus perfis conforme desejarem.
+
+3. **Descoberta de Comunidades:**
+   - Essa tela permite que os usuários descubram e se juntem a comunidades de interesse dentro do aplicativo (RF-003). A interface foi projetada com recursos de pesquisa avançada e sugestões de comunidades com base nas preferências do usuário, tornando a descoberta intuitiva e personalizada.
+
+4. **Feed de Conteúdo e Interação:**
+   - Aqui, os usuários podem publicar, visualizar e interagir com o conteúdo dentro das comunidades (RF-004 e RF-007). O feed foi projetado para exibir postagens de forma organizada, com ferramentas de interação como comentários, curtidas e compartilhamentos facilmente acessíveis.
+
+5. **Recomendações Personalizadas:**
+   - Esta interface fornece recomendações de conteúdo e comunidades com base nas preferências e comportamento do usuário (RF-005). Ela é adaptativa, mostrando sugestões relevantes conforme o uso do aplicativo.
+
+6. **Configurações Personalizadas:**
+   - Nesta tela, os usuários podem personalizar suas configurações de conteúdo, notificações e preferências (RF-006 e RF-009). Foram incluídas opções granulares para atender às diferentes necessidades dos usuários.
+
+7. **Pesquisa Avançada:**
+   - Essa interface permite que os usuários realizem pesquisas para descobrir novas comunidades e conteúdos (RF-008). A pesquisa foi projetada com filtros e opções avançadas para garantir resultados precisos e relevantes.
+
+### Elaboração para Atender aos Requisitos
+
+As interfaces foram elaboradas de forma a atender aos requisitos funcionais, não funcionais e histórias de usuário descritos na documentação de especificação. Isso inclui:
+
+- **RF-001 (Autenticação de Usuário):** A tela de autenticação foi projetada para garantir a eficiência e segurança no processo de login.
+- **RF-002 (Gerenciamento de Perfis):** A interface de perfil permite que os usuários criem, editem e excluam informações conforme necessário.
+- **RF-003 (Descoberta de Comunidades):** A tela de descoberta oferece uma experiência intuitiva para encontrar e participar de comunidades de interesse.
+- **RF-004 (Interação com Conteúdo):** O feed de conteúdo e interação foi elaborado para facilitar a publicação e interação dos usuários com o conteúdo das comunidades.
+- **RF-005 (Recomendações de Conteúdo):** As recomendações personalizadas são exibidas de forma atraente e relevante para o usuário.
+- **RF-006 (Personalização de Configurações):** A interface de configurações permite ajustes granulares nas preferências do usuário.
+- **RF-007 (Ferramentas de Interação Social):** As ferramentas de interação social são facilmente acessíveis nas interfaces relevantes.
+- **RF-008 (Pesquisa de Conteúdo):** A pesquisa avançada oferece resultados precisos e relevantes para os usuários.
+- **RF-009 (Configuração de Notificações):** As opções de notificação são configuráveis de acordo com as preferências do usuário.
+
+Essa abordagem garante que as principais interfaces da plataforma sejam intuitivas, funcionais e atendam às necessidades dos usuários de forma eficaz.
 
 ## Diagrama de Fluxo
 
