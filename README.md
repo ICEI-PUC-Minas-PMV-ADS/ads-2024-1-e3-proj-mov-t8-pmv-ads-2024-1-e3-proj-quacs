@@ -15,7 +15,7 @@ O projeto Quacs está desenvolvendo um aplicativo móvel com o objetivo de simpl
 * Giovani de Queiroz CheloniGiovani de Queiroz Cheloni
 * Guilherme Batista BritoGuilherme Batista Brito
 * Luís Eduardo Vieira Chaves Paiva
-* Lucas Henrique Vasconcelos SiqueiraLucas Henrique Vasconcelos Siqueira
+* Lucas Henrique Vasconcelos Siqueira
 
 ## Orientador
 
