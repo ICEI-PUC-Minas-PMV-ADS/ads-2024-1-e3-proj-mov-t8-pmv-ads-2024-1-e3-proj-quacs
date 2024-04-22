@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quacsBackEnd", "quacsBackEnd\quacsBackEnd.csproj", "{ED622AE2-0BFD-4CB1-98E7-5C97D024A158}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED622AE2-0BFD-4CB1-98E7-5C97D024A158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED622AE2-0BFD-4CB1-98E7-5C97D024A158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED622AE2-0BFD-4CB1-98E7-5C97D024A158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED622AE2-0BFD-4CB1-98E7-5C97D024A158}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6D8F23A-7341-449B-8CF2-D33B68A90A90}
+	EndGlobalSection
+EndGlobal
