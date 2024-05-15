@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("quacsBackEnd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40484271d612bb52a186b593b2760670cfd037fe")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+986cb31a5cd18c8f038def0eaad53238b432c67c")]
+>>>>>>> 27231263599cc782aced184e3fceade306cfd2f4
 [assembly: System.Reflection.AssemblyProductAttribute("quacsBackEnd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("quacsBackEnd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
