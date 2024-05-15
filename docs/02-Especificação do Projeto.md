@@ -74,6 +74,12 @@ Abaixo temos as demonstrações dos processos presentes na plataforma, com a atu
 
 [Projeção de Lucros](https://app.powerbi.com/groups/me/reports/eec5cdad-19ed-49c8-a2ca-691c3cfa8c81/ReportSection?experience=power-bi)
 
+### Indicadores
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/9950334b-9809-422b-83eb-d4967cc0c6a4)
+
+### Lucratividade 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/af51779f-6ed7-44c2-8836-4c129f0a63df)
+
 ### Quadro descritivo:
 
 | INDICADOR | OBJETIVO | DESCRIÇÃO | CÁLCULO | FONTE DE DAODS| PERSPECTIVA |
@@ -234,11 +240,8 @@ Essas restrições refletem os aspectos cruciais que devem ser considerados dura
 
 # Matriz de Rastreabilidade
 
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/8be6291d-5143-4ec4-881b-637d0ee205cf)
 
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
-
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
 
 > **Links Úteis**:
 > - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
@@ -251,13 +254,19 @@ A matriz deve contemplar todos os elementos relevantes que fazem parte do sistem
 De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
 
 ## Gerenciamento de Tempo
+- [WorkSpace do Projeto](https://trello.com/b/Pd2XWPRP/projeto-quacs-mobile)
 
-Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/17b38dcc-dd41-402f-9cf0-d922a047ccee)
 
-![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
+### Etapa 1
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/683389c1-9630-49f9-87c4-88f64f52c34f)
 
-![Grafico de Gantt](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/3f0836f6-1b8e-4ef7-94c6-8190eb108fb8)
-[Diagrama de Gantt](https://app.powerbi.com/groups/me/reports/45b9c571-4422-41bb-bee7-4483ca6cf743/ReportSection?experience=power-bi)
+### Etapa 2
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/00fb2903-ff28-445d-9696-907f609d4270)
+
+### Etapa 3
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/4cc0dee7-49db-4ab5-8808-ef9b1ed4b33b)
+
 
 ## Gerenciamento de Equipe
 
@@ -265,10 +274,8 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/82ee58af-80ac-4de7-be0d-76223dfccfc1)
 
-![Simple Project Timeline](img/02-project-timeline.png)
 
 ## Gestão de Orçamento
 
-O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs/assets/128256600/64f8beb8-5ded-4e0a-bb98-49f71bdc8bfa)
 
-![Orçamento](img/02-orcamento.png)

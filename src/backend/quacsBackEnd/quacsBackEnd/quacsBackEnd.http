@@ -1,0 +1,6 @@
+@quacsBackEnd_HostAddress = http://localhost:5208
+
+GET {{quacsBackEnd_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
