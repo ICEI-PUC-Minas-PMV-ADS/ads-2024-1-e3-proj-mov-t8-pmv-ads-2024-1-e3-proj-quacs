@@ -161,3 +161,4 @@ D:\Codando\Puc_Minas\Eixo_3_dotnet\src\backend\quacsBackEnd\quacsBackEnd\obj\Deb
 D:\Codando\Puc_Minas\Eixo_3_dotnet\src\backend\quacsBackEnd\quacsBackEnd\obj\Debug\net8.0\quacsBackEnd.pdb
 D:\Codando\Puc_Minas\Eixo_3_dotnet\src\backend\quacsBackEnd\quacsBackEnd\obj\Debug\net8.0\quacsBackEnd.genruntimeconfig.cache
 D:\Codando\Puc_Minas\Eixo_3_dotnet\src\backend\quacsBackEnd\quacsBackEnd\obj\Debug\net8.0\ref\quacsBackEnd.dll
+D:\Codando\Puc_Minas\Eixo_3_dotnet\src\backend\quacsBackEnd\quacsBackEnd\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
