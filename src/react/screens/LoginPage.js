@@ -1,9 +1,24 @@
-import * as React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import React, { useState } from "react";
+import { StyleSheet, View, Text, TextInput, TouchableOpacity, Alert } from "react-native";
 import { Image } from "expo-image";
+import axios from 'axios';
 import { Color, FontFamily, FontSize, Border } from "../GlobalStyles";
 
 const LoginPage = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLogin = async () => {
+    try {
+      const response = await axios.post('https://quacsapi.azurewebsites.net/login', { email, password });
+      console.log(response.data);
+      Alert.alert('Login successful');
+    } catch (error) {
+      console.error('Erro no login!', error);
+      Alert.alert('Credencial Inválida');
+    }
+  };
+
   return (
     <View style={styles.loginPage}>
       <View style={styles.appTopBar}>
@@ -25,33 +40,39 @@ const LoginPage = () => {
         </View>
         <View style={[styles.mail, styles.mailLayout]}>
           <View style={[styles.rectangle2, styles.rectangleBorder]} />
-          <Text style={[styles.digiteSeuEMail, styles.ouTypo]}>
-            Digite seu e-mail
-          </Text>
+          <TextInput
+            style={[styles.input, styles.ouTypo]}
+            placeholder="Digite seu e-mail"
+            value={email}
+            onChangeText={setEmail}
+            keyboardType="email-address"
+          />
         </View>
-        <View style={[styles.next, styles.rectangleLayout]}>
+        <View style={[styles.password, styles.mailLayout]}>
+          <View style={[styles.rectangle2, styles.rectangleBorder]} />
+          <TextInput
+            style={[styles.input, styles.ouTypo]}
+            placeholder="Digite sua senha"
+            value={password}
+            onChangeText={setPassword}
+            secureTextEntry
+          />
+        </View>
+        <TouchableOpacity style={[styles.next, styles.rectangleLayout]} onPress={handleLogin}>
           <View style={[styles.rectangle3, styles.rectangleLayout]} />
           <Text style={[styles.avanar, styles.avanarTypo]}>Avançar</Text>
-        </View>
-        <View style={[styles.passwordRecovery, styles.rectangleLayout]}>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.passwordRecovery, styles.rectangleLayout]}>
           <View style={[styles.rectangle4, styles.rectangleLayout]} />
-          <Text style={[styles.esqueceuSuaSenha, styles.avanarTypo]}>
-            Esqueceu sua senha?
-          </Text>
-        </View>
+          <Text style={[styles.esqueceuSuaSenha, styles.avanarTypo]}>Esqueceu sua senha?</Text>
+        </TouchableOpacity>
         <View style={[styles.sign, styles.orLayout]}>
-          <Text style={[styles.noTemUma, styles.noTemUmaTypo]}>
-            Não tem uma conta?
-          </Text>
-          <Text style={[styles.inscrevaSe, styles.noTemUmaTypo]}>
-            Inscreva-se
-          </Text>
+          <Text style={[styles.noTemUma, styles.noTemUmaTypo]}>Não tem uma conta?</Text>
+          <Text style={[styles.inscrevaSe, styles.noTemUmaTypo]}>Inscreva-se</Text>
         </View>
         <View style={styles.rectangle5Position}>
           <View style={[styles.rectangle5, styles.rectangle5Position]} />
-          <Text style={[styles.entrarComGoogle, styles.avanarTypo]}>
-            Entrar com Google
-          </Text>
+          <Text style={[styles.entrarComGoogle, styles.avanarTypo]}>Entrar com Google</Text>
           <Image
             style={[styles.googleIcon, styles.iconPosition]}
             contentFit="cover"
@@ -65,9 +86,7 @@ const LoginPage = () => {
           contentFit="cover"
           source={require("../assets/rubber-duck.png")}
         />
-        <Text style={[styles.conectarAoQuac, styles.appNameLayout]}>
-          Conectar ao Quac
-        </Text>
+        <Text style={[styles.conectarAoQuac, styles.appNameLayout]}>Conectar ao Quac</Text>
       </View>
       <View style={[styles.thumbnail, styles.thumbnailLayout]}>
         <View style={[styles.thumbnailChild, styles.thumbnailLayout]} />
@@ -231,8 +250,18 @@ const styles = StyleSheet.create({
     fontFamily: FontFamily.robotoRegular,
     position: "absolute",
   },
+  input: {
+    height: '100%',
+    width: '100%',
+    padding: 10,
+    color: Color.colorDimgray,
+    fontSize: FontSize.size_mid,
+  },
   mail: {
     top: 84,
+  },
+  password: {
+    top: 144,
   },
   rectangle3: {
     backgroundColor: Color.colorGray,
@@ -247,7 +276,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   next: {
-    top: 170,
+    top: 230,
   },
   rectangle4: {
     borderRadius: Border.br_9980xl,
@@ -264,7 +293,7 @@ const styles = StyleSheet.create({
     color: Color.colorGray,
   },
   passwordRecovery: {
-    top: 230,
+    top: 290,
   },
   noTemUma: {
     width: 145,
@@ -277,7 +306,7 @@ const styles = StyleSheet.create({
     width: 81,
   },
   sign: {
-    top: 318,
+    top: 348,
     width: 226,
     left: 0,
   },
@@ -302,7 +331,7 @@ const styles = StyleSheet.create({
   contentLogin: {
     top: 356,
     left: 57,
-    height: 338,
+    height: 388,
     width: 300,
     position: "absolute",
   },
