@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ESuRkIpYUMRjlfTPWAKIK1ktuYZZ1qy0/kmZSVgfAC4AJ7WKRaTGMMcCdn6V8g+H6gTSVMRClQIG2+wsT75Zew==",
+  "dgSpecHash": "lE9ibAA/t9I=",
   "success": true,
-  "projectFilePath": "D:\\Codando\\Puc_Minas\\Eixo_3_dotnet\\src\\backend\\quacsBackEnd\\quacsBackEnd\\quacsBackEnd.csproj",
+  "projectFilePath": "C:\\Users\\mathe\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs\\src\\backend\\quacsBackEnd\\quacsBackEnd\\quacsBackEnd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mathe\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
