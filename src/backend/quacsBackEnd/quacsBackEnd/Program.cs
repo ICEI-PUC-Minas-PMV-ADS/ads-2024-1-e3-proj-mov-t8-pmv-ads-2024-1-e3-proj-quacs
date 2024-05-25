@@ -68,22 +68,30 @@ app.MapPost("/login", async (UserLogin userLogin, [FromServices] ApplicationDbCo
         return Results.BadRequest("Credenciais inválidas.");
     }
 
+    // Gere o token JWT
+    var token = GenerateJwtToken(existingUser);
+
+    // Retorne os dados do usuário junto com o token
+    return Results.Ok(new { Token = token, User = existingUser });
+});
+
+string GenerateJwtToken(User user)
+{
     var tokenHandler = new JwtSecurityTokenHandler();
     var key = Encoding.ASCII.GetBytes("%^M6QGzCs%i^KP%H&&%Q%$3Y&zd^5Pe7H$LGz$i#8#C^%###^8@K%&6y$y^4uo3Lax");
     var tokenDescriptor = new SecurityTokenDescriptor
     {
         Subject = new ClaimsIdentity(new Claim[]
         {
-            new Claim(ClaimTypes.Name, existingUser.Email)
+            new Claim(ClaimTypes.Name, user.Email)
         }),
         Expires = DateTime.UtcNow.AddDays(7),
         SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
     };
     var token = tokenHandler.CreateToken(tokenDescriptor);
-    var tokenString = tokenHandler.WriteToken(token);
+    return tokenHandler.WriteToken(token);
+}
 
-    return Results.Ok(new { Token = tokenString });
-});
 
 
 app.Run();

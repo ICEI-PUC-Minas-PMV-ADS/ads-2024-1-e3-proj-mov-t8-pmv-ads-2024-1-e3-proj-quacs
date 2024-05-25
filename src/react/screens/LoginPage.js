@@ -4,7 +4,7 @@ import { Image } from "expo-image";
 import axios from 'axios';
 import { Color, FontFamily, FontSize, Border } from "../GlobalStyles";
 
-const LoginPage = () => {
+const LoginPage = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -13,6 +13,7 @@ const LoginPage = () => {
       const response = await axios.post('https://quacsapi.azurewebsites.net/login', { email, password });
       console.log(response.data);
       Alert.alert('Login successful');
+      navigation.navigate('HomePage');
     } catch (error) {
       console.error('Erro no login!', error);
       Alert.alert('Credencial Inválida');
@@ -21,17 +22,6 @@ const LoginPage = () => {
 
   return (
     <View style={styles.loginPage}>
-      <View style={styles.appTopBar}>
-        <View style={[styles.appTopBar1, styles.appLayout]} />
-        <View style={[styles.exit, styles.orLayout]}>
-          <View style={[styles.appTopBar2, styles.appLayout]} />
-          <Image
-            style={styles.groupIcon}
-            contentFit="cover"
-            source={require("../assets/group.png")}
-          />
-        </View>
-      </View>
       <View style={styles.contentLogin}>
         <View style={[styles.or, styles.orLayout]}>
           <View style={[styles.rectangle, styles.rectangleLayout1]} />
@@ -68,7 +58,12 @@ const LoginPage = () => {
         </TouchableOpacity>
         <View style={[styles.sign, styles.orLayout]}>
           <Text style={[styles.noTemUma, styles.noTemUmaTypo]}>Não tem uma conta?</Text>
-          <Text style={[styles.inscrevaSe, styles.noTemUmaTypo]}>Inscreva-se</Text>
+          <Text
+            style={[styles.inscrevaSe, styles.noTemUmaTypo]}
+            onPress={() => navigation.navigate('CadastroUsuario')}  // Navegação para a tela de cadastro
+          >
+            Inscreva-se
+          </Text>
         </View>
         <View style={styles.rectangle5Position}>
           <View style={[styles.rectangle5, styles.rectangle5Position]} />
@@ -120,7 +115,6 @@ const styles = StyleSheet.create({
   },
   ouTypo: {
     textAlign: "left",
-    fontFamily: FontFamily.robotoRegular,
   },
   mailLayout: {
     height: 58,
@@ -142,14 +136,12 @@ const styles = StyleSheet.create({
   avanarTypo: {
     textAlign: "center",
     fontSize: FontSize.size_mini,
-    fontFamily: FontFamily.robotoRegular,
     lineHeight: 20,
     position: "absolute",
   },
   noTemUmaTypo: {
     fontSize: FontSize.size_mini,
     textAlign: "left",
-    fontFamily: FontFamily.robotoRegular,
     lineHeight: 20,
     top: 0,
     position: "absolute",
@@ -220,7 +212,6 @@ const styles = StyleSheet.create({
     color: Color.colorGray,
     lineHeight: 20,
     textAlign: "left",
-    fontFamily: FontFamily.robotoRegular,
     fontSize: FontSize.size_mid,
     width: 20,
     top: 0,
@@ -247,7 +238,6 @@ const styles = StyleSheet.create({
     color: Color.colorDimgray,
     fontSize: FontSize.size_mid,
     textAlign: "left",
-    fontFamily: FontFamily.robotoRegular,
     position: "absolute",
   },
   input: {
@@ -319,8 +309,8 @@ const styles = StyleSheet.create({
   },
   entrarComGoogle: {
     top: 10,
-    left: 100,
-    width: 125,
+    left: 90,
+    width: 150,
     color: Color.colorGray,
   },
   googleIcon: {
@@ -344,7 +334,6 @@ const styles = StyleSheet.create({
     fontSize: 26,
     lineHeight: 32,
     textAlign: "left",
-    fontFamily: FontFamily.robotoRegular,
     color: Color.colorGray,
     left: 0,
     top: 0,
