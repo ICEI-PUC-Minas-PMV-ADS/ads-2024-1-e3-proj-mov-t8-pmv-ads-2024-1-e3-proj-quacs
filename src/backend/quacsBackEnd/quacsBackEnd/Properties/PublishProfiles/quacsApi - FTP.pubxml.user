@@ -7,5 +7,8 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAphZQb8JjIUeSe97w9kOqtAAAAAACAAAAAAAQZgAAAAEAACAAAABkpimBMb05sNLXiTAVBYRSzcy5nCYUEM+yGKHIZyBQawAAAAAOgAAAAAIAACAAAAD+zTkMSnXtYUMgs4HLT6s3Rs2IMeR7xphVjrmUOFOi/4AAAADYl8uSzpoLtrty2qiJuLQW6scsXchDdFmLq/RqaAN9SA7qZEXrGob3NQChOL8cNY0WzqUFuMGrQoYoCchCuRGHyxNG24Hy80rb+reu/QuJocnL1iZUAvD3rjOIi+AtOu6z9OEo/sA3xW+2YVifQto8HFM0Qe1zDCfxxD6i0A4PwEAAAABmvP20tLJS/T1MjifpnJN6+YTmiufVhXWvgqUS3t5/rJ9EaLt/iy0YGumPObPXhbB4c91O3GWzuGKgGUgDTnif</EncryptedPassword>
+    <_PublishTargetUrl>ftps://waws-prod-cq1-041.ftp.azurewebsites.windows.net/site/wwwroot</_PublishTargetUrl>
+    <History>False|2024-05-27T02:39:57.2740143Z||;</History>
+    <LastFailureDetails />
   </PropertyGroup>
 </Project>

@@ -12,12 +12,15 @@ const LoginPage = ({ navigation }) => {
     try {
       const response = await axios.post('https://quacsapi.azurewebsites.net/login', { email, password });
       console.log(response.data);
-      Alert.alert('Login successful');
       navigation.navigate('HomePage');
     } catch (error) {
       console.error('Erro no login!', error);
       Alert.alert('Credencial Inválida');
     }
+  };
+
+  const handlePasswordForgoted = () => {
+    navigation.navigate('PasswordForgot');
   };
 
   return (
@@ -52,7 +55,7 @@ const LoginPage = ({ navigation }) => {
           <View style={[styles.rectangle3, styles.rectangleLayout]} />
           <Text style={[styles.avanar, styles.avanarTypo]}>Avançar</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.passwordRecovery, styles.rectangleLayout]}>
+        <TouchableOpacity onPress={handlePasswordForgoted} style={[styles.passwordRecovery, styles.rectangleLayout]}>
           <View style={[styles.rectangle4, styles.rectangleLayout]} />
           <Text style={[styles.esqueceuSuaSenha, styles.avanarTypo]}>Esqueceu sua senha?</Text>
         </TouchableOpacity>
@@ -60,7 +63,7 @@ const LoginPage = ({ navigation }) => {
           <Text style={[styles.noTemUma, styles.noTemUmaTypo]}>Não tem uma conta?</Text>
           <Text
             style={[styles.inscrevaSe, styles.noTemUmaTypo]}
-            onPress={() => navigation.navigate('CadastroUsuario')}  // Navegação para a tela de cadastro
+            onPress={() => navigation.navigate('CadastroUsuario')}
           >
             Inscreva-se
           </Text>

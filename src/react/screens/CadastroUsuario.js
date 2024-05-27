@@ -71,7 +71,7 @@ const CadastroUsuario = ({ navigation }) => {
         navigation.navigate('LoginPage');
       } else {
         const errorData = await response.json();
-        Alert.alert('Erro', errorData.message || 'Ocorreu um erro ao criar a conta.');
+        Alert.alert('Erro', errorData || 'Ocorreu um erro ao criar a conta.');
       }
     } catch (error) {
       Alert.alert('Erro', 'Ocorreu um erro ao conectar com o servidor.');

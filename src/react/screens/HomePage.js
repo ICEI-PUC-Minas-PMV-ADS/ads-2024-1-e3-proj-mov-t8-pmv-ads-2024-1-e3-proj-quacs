@@ -1,83 +1,80 @@
-import * as React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import React, { useState } from "react";
+import { StyleSheet, View, Text, TouchableWithoutFeedback } from "react-native";
 import { Image } from "expo-image";
 import { Color, Border, FontFamily } from "../GlobalStyles";
+import SideClosedMenu from "../components/sideClosedMenu";
+import SideOpenedMenu from "../components/sideOpenedMenu"; // Importar o SideOpenedMenu
 
 const PaginaInicial = () => {
+  const [menuAberto, setMenuAberto] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuAberto(!menuAberto);
+  };
+
+  const closeMenu = () => {
+    if (menuAberto) {
+      setMenuAberto(false);
+    }
+  };
+
   return (
-    <View style={styles.paginaInicial}>
-      <View style={styles.fundo} />
-      <View style={styles.publicacoes}>
-        <View style={[styles.publiEx3, styles.publiLayout1]}>
-          <View style={[styles.publiEx31, styles.publiBg]} />
+    <TouchableWithoutFeedback onPress={closeMenu}>
+      <View style={styles.paginaInicial}>
+        <View style={styles.fundo} />
+        <View style={styles.publicacoes}>
+          <View style={[styles.publiEx3, styles.publiLayout1]}>
+            <View style={[styles.publiEx31, styles.publiBg]} />
+          </View>
+          <View style={[styles.publiEx2, styles.publiLayout]}>
+            <View style={[styles.publiEx21, styles.publiLayout]} />
+          </View>
+          <View style={styles.publiPosition}>
+            <View style={[styles.publiEx11, styles.publiPosition]} />
+          </View>
         </View>
-        <View style={[styles.publiEx2, styles.publiLayout]}>
-          <View style={[styles.publiEx21, styles.publiLayout]} />
-        </View>
-        <View style={styles.publiPosition}>
-          <View style={[styles.publiEx11, styles.publiPosition]} />
-        </View>
-      </View>
-      <View style={[styles.menuHorizontalGrupos, styles.perfilLateralLayout]}>
-        <Image
-          style={styles.supportIcon}
-          contentFit="cover"
-          source={require("../assets/support.png")}
-        />
-        <View style={[styles.grupo5, styles.grupoLayout]}>
-          <View style={[styles.grupo2, styles.grupo2Position]} />
-        </View>
-        <View style={[styles.grupo4, styles.grupoLayout]}>
-          <View style={[styles.grupo2, styles.grupo2Position]} />
-        </View>
-        <View style={[styles.grupo3, styles.grupoPosition]}>
-          <View style={[styles.grupoSelected1, styles.grupoPosition]} />
-          <View style={styles.grupo1} />
-        </View>
-        <View style={[styles.grupo22, styles.grupoLayout]}>
-          <View style={[styles.grupo2, styles.grupo2Position]} />
-        </View>
-        <View style={[styles.grupo11, styles.grupoPosition]}>
-          <View style={[styles.grupoSelected1, styles.grupoPosition]} />
-          <View style={styles.grupo1} />
-        </View>
-      </View>
-      <View style={[styles.buscaComunidade, styles.rectangleLayout]}>
-        <View style={[styles.rectangle, styles.rectangleLayout]} />
-        <Text style={styles.busqueUmaNova}>Busque uma nova comunidade</Text>
-      </View>
-      <View style={styles.menuPosition}>
-        <View style={[styles.fundoMenuLateral, styles.menuPosition]} />
-        <Image
-          style={styles.configuraesIcon}
-          contentFit="cover"
-          source={require("../assets/configuraes.png")}
-        />
-        <Image
-          style={styles.iconeGrupos}
-          contentFit="cover"
-          source={require("../assets/icone-grupos.png")}
-        />
-        <View style={styles.rectangle1} />
-        <View style={[styles.perfil, styles.perfilLayout]}>
-          <View style={[styles.iconePerfil, styles.perfilLayout]} />
+        <View style={styles.menuHorizontalGrupos}>
           <Image
-            style={styles.fotoPerfilIcon}
+            style={[styles.supportIcon, styles.supportIconLayout]}
             contentFit="cover"
-            source={require("../assets/foto-perfil.png")}
+            source={require("../assets/support.png")}
           />
+          <View style={[styles.grupo4Parent, styles.supportIconLayout]}>
+            <View style={[styles.grupo4, styles.grupoLayout]}>
+              <View style={[styles.grupo2, styles.grupo2Position]} />
+            </View>
+            <View style={[styles.grupo3, styles.grupoPosition]}>
+              <View style={[styles.grupoSelected1, styles.grupoPosition]} />
+              <View style={styles.grupo1} />
+            </View>
+            <View style={[styles.grupo21, styles.grupoLayout]}>
+              <View style={[styles.grupo2, styles.grupo2Position]} />
+            </View>
+            <View style={[styles.grupo11, styles.grupoPosition]}>
+              <View style={[styles.grupoSelected1, styles.grupoPosition]} />
+              <View style={styles.grupo1} />
+            </View>
+          </View>
         </View>
-        <View style={[styles.perfilLateral, styles.perfilLateralLayout]} />
+        <View style={[styles.buscaComunidade, styles.rectangleLayout]}>
+          <View style={[styles.rectangle, styles.rectangleLayout]} />
+          <Text style={styles.busqueUmaNova}>Busque uma nova comunidade</Text>
+        </View>
+        {menuAberto ? (
+          <SideOpenedMenu toggleMenu={toggleMenu} />
+        ) : (
+          <SideClosedMenu toggleMenu={toggleMenu} />
+        )}
       </View>
-    </View>
+    </TouchableWithoutFeedback>
   );
 };
 
 const styles = StyleSheet.create({
   publiLayout1: {
-    height: 201,
+    height: 169,
     left: 0,
-    width: 331,
+    width: 299,
     position: "absolute",
   },
   publiBg: {
@@ -87,17 +84,17 @@ const styles = StyleSheet.create({
   publiLayout: {
     height: 278,
     left: 0,
-    width: 331,
+    width: 299,
     position: "absolute",
   },
   publiPosition: {
     height: 200,
     left: 0,
-    width: 331,
+    width: 299,
     top: 0,
     position: "absolute",
   },
-  perfilLateralLayout: {
+  supportIconLayout: {
     height: 40,
     position: "absolute",
   },
@@ -120,7 +117,7 @@ const styles = StyleSheet.create({
   },
   rectangleLayout: {
     height: 28,
-    width: 331,
+    width: 299,
     position: "absolute",
   },
   menuPosition: {
@@ -144,9 +141,9 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   publiEx31: {
-    height: 201,
+    height: 169,
     left: 0,
-    width: 331,
+    width: 299,
     position: "absolute",
     top: 0,
   },
@@ -166,29 +163,23 @@ const styles = StyleSheet.create({
     borderRadius: Border.br_mini,
   },
   publicacoes: {
-    top: 130,
-    height: 713,
-    width: 331,
+    top: 162,
+    height: 681,
+    width: 299,
     left: 70,
     position: "absolute",
   },
   supportIcon: {
-    left: 292,
+    left: 260,
     width: 37,
     height: 40,
     top: 0,
-    position: "absolute",
   },
   grupo2: {
     height: 35,
     width: 37,
     position: "absolute",
     backgroundColor: Color.colorWhite,
-  },
-  grupo5: {
-    left: 236,
-    top: 3,
-    height: 35,
   },
   grupo4: {
     left: 180,
@@ -212,20 +203,27 @@ const styles = StyleSheet.create({
     backgroundColor: Color.colorWhite,
   },
   grupo3: {
-    marginLeft: -46.5,
+    marginLeft: 9.9,
   },
-  grupo22: {
+  grupo21: {
     left: 62,
     top: 3,
     height: 35,
   },
   grupo11: {
-    marginLeft: -164.5,
+    marginLeft: -108.1,
+  },
+  grupo4Parent: {
+    top: 1,
+    width: 216,
+    left: 0,
   },
   menuHorizontalGrupos: {
-    top: 54,
+    top: 80,
     left: 72,
-    width: 329,
+    width: 297,
+    height: 41,
+    position: "absolute",
   },
   rectangle: {
     borderRadius: Border.br_9xs,
@@ -235,76 +233,19 @@ const styles = StyleSheet.create({
   },
   busqueUmaNova: {
     top: 2,
-    left: 13,
     fontSize: 12,
     lineHeight: 24,
     fontFamily: FontFamily.notoSansRegular,
     color: "#949ba4",
     textAlign: "left",
-    width: 217,
+    width: 211,
+    left: 12,
     position: "absolute",
   },
   buscaComunidade: {
-    top: 10,
+    top: 39,
     left: 70,
     height: 28,
-  },
-  fundoMenuLateral: {
-    backgroundColor: "#c1c1c1",
-  },
-  configuraesIcon: {
-    height: "2.14%",
-    width: "32.73%",
-    top: "95.49%",
-    right: "34.55%",
-    bottom: "2.37%",
-    left: "32.73%",
-    maxWidth: "100%",
-    maxHeight: "100%",
-    position: "absolute",
-    overflow: "hidden",
-  },
-  iconeGrupos: {
-    top: 74,
-    left: 14,
-    width: 30,
-    height: 28,
-    position: "absolute",
-  },
-  rectangle1: {
-    top: 61,
-    borderRadius: 1,
-    backgroundColor: "rgba(78, 80, 88, 0.48)",
-    width: 32,
-    height: 2,
-    left: 12,
-    position: "absolute",
-  },
-  iconePerfil: {
-    backgroundColor: "#f7f7f7",
-    borderRadius: Border.br_21xl,
-    left: 0,
-    top: 0,
-  },
-  fotoPerfilIcon: {
-    top: 4,
-    left: 3,
-    borderRadius: 90,
-    width: 23,
-    height: 22,
-    position: "absolute",
-  },
-  perfil: {
-    top: 20,
-    left: 12,
-  },
-  perfilLateral: {
-    top: 16,
-    borderTopRightRadius: Border.br_9xs,
-    borderBottomRightRadius: Border.br_9xs,
-    backgroundColor: "#f2f3f5",
-    width: 4,
-    left: 0,
   },
   paginaInicial: {
     flex: 1,

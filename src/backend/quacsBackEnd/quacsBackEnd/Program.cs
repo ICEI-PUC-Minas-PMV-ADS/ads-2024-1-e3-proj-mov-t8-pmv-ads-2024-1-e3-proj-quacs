@@ -75,6 +75,23 @@ app.MapPost("/login", async (UserLogin userLogin, [FromServices] ApplicationDbCo
     return Results.Ok(new { Token = token, User = existingUser });
 });
 
+app.MapPost("/passwordForgotten", async (string email, [FromServices] ApplicationDbContext dbContext) =>
+{
+    var user = await dbContext.Users.FirstOrDefaultAsync(u => u.Email == email);
+    if (user == null)
+    {
+        return Results.BadRequest("E-mail não encontrado.");
+    }
+
+    var decryptedPassword = PasswordUtility.DecryptPassword(user.Password);
+
+    await PasswordUtility.SendPasswordRecoveryEmail(email, decryptedPassword);
+
+    return Results.Ok("E-mail de recuperação de senha enviado com sucesso.");
+});
+
+
+
 string GenerateJwtToken(User user)
 {
     var tokenHandler = new JwtSecurityTokenHandler();
@@ -91,7 +108,6 @@ string GenerateJwtToken(User user)
     var token = tokenHandler.CreateToken(tokenDescriptor);
     return tokenHandler.WriteToken(token);
 }
-
 
 
 app.Run();
