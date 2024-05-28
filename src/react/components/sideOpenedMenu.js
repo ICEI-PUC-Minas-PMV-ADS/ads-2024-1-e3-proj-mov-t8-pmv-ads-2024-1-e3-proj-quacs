@@ -14,10 +14,6 @@ const SideOpenedMenu = ({ toggleMenu }) => {
   };
   */
 
-  const handlePasswordForgoted = () => {
-    navigation.navigate('PasswordForgot');
-  };
-
   return (
     <View style={styles.abertoLayout}>
       <View style={styles.molduraPerfil} />
