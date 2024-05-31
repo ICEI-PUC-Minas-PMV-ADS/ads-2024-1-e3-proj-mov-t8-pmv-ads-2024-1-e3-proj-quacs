@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("quacsBackEnd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb9edf5e4edbf77c9a2419646fe09ab7a44f4eed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84437bb83ce3de50d9e452be10ad0178001c2f2d")]
 [assembly: System.Reflection.AssemblyProductAttribute("quacsBackEnd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("quacsBackEnd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
