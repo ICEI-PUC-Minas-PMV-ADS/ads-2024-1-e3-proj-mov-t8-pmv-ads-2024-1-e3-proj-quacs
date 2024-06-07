@@ -11,8 +11,7 @@ import { Image } from "expo-image";
 import axios from "axios";
 import { Color, FontFamily, FontSize, Border } from "../GlobalStyles";
 
-import Logo from "../components/Logo"; // Correctly import the logo component
-
+import Logo from "../components/Logo";
 const LoginPage = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -26,8 +25,8 @@ const LoginPage = ({ navigation }) => {
       console.log(response.data);
       navigation.navigate("HomePage");
     } catch (error) {
-      console.error("Login Error!", error);
-      Alert.alert("Invalid Credentials");
+      console.error("Erro ao Logar!", error);
+      Alert.alert("Credencial Inválida!");
     }
   };
 
@@ -44,17 +43,17 @@ const LoginPage = ({ navigation }) => {
             style={styles.googleIcon}
             source={require("../assets/google.png")}
           />
-          <Text style={styles.googleButtonText}>Sign in with Google</Text>
+          <Text style={styles.googleButtonText}>Cadastre-se com o Google</Text>
         </TouchableOpacity>
         <View style={styles.orContainer}>
           <View style={styles.divider} />
-          <Text style={styles.orText}>or</Text>
+          <Text style={styles.orText}>ou</Text>
           <View style={styles.divider} />
         </View>
         <View style={styles.inputContainer}>
           <TextInput
             style={styles.input}
-            placeholder="Enter your email"
+            placeholder="E-mail"
             value={email}
             onChangeText={setEmail}
             keyboardType="email-address"
@@ -63,7 +62,7 @@ const LoginPage = ({ navigation }) => {
         <View style={styles.inputContainer}>
           <TextInput
             style={styles.input}
-            placeholder="Enter your password"
+            placeholder="Senha"
             value={password}
             onChangeText={setPassword}
             secureTextEntry
@@ -76,15 +75,15 @@ const LoginPage = ({ navigation }) => {
           onPress={handlePasswordForgot}
           style={styles.linkButton}
         >
-          <Text style={styles.linkButtonText}>Forgot your password?</Text>
+          <Text style={styles.linkButtonText}>Esqueceu a senha?</Text>
         </TouchableOpacity>
         <View style={styles.signUpContainer}>
-          <Text style={styles.signUpText}>Don't have an account?</Text>
+          <Text style={styles.signUpText}>Ainda não é usuário?</Text>
           <Text
             style={styles.signUpLink}
             onPress={() => navigation.navigate("CadastroUsuario")}
           >
-            Sign Up
+            Cadastre-se
           </Text>
         </View>
       </View>
@@ -99,7 +98,7 @@ const styles = StyleSheet.create({
   },
   contentLogin: {
     marginHorizontal: 57,
-    marginTop: 300, // Adjusted to accommodate the logo
+    marginTop: 300,
   },
   orContainer: {
     flexDirection: "row",
