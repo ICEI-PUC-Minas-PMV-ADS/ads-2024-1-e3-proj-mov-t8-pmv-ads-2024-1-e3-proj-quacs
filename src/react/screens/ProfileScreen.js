@@ -4,12 +4,10 @@ import { View, StyleSheet, Image } from 'react-native';
 import { Text, Button } from 'react-native-paper';
 
 const Profile = () => {
-  // State to determine if user is logged in
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  // Dummy user data
   const user = {
-    name: 'John Doe',
+    name: 'Nome de Usuario',
     photo: 'https://via.placeholder.com/150',
     followers: 120,
     following: 150,
@@ -22,13 +20,13 @@ const Profile = () => {
           <Image source={{ uri: user.photo }} style={styles.profilePhoto} />
           <Text style={styles.name}>{user.name}</Text>
           <View style={styles.followContainer}>
-            <Text style={styles.followText}>Followers: {user.followers}</Text>
-            <Text style={styles.followText}>Following: {user.following}</Text>
+            <Text style={styles.followText}>Seguidores: {user.followers}</Text>
+            <Text style={styles.followText}> Seguindo: {user.following}</Text>
           </View>
         </View>
       ) : (
         <Button mode="contained" onPress={() => setIsLoggedIn(true)}>
-          Log In
+          Entrar
         </Button>
       )}
     </View>
