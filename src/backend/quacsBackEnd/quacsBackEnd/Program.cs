@@ -67,13 +67,21 @@ app.MapPost("/login", async (UserLogin userLogin, [FromServices] ApplicationDbCo
     {
         return Results.BadRequest("Credenciais inválidas.");
     }
-
-    // Gere o token JWT
     var token = GenerateJwtToken(existingUser);
+    var userWithoutPassword = new
+    {
+        existingUser.Id,
+        existingUser.Email,
+        existingUser.Name,
+        existingUser.ProfileSelfie,
+        existingUser.Description,
+        existingUser.BirthDate,
+        existingUser.Gender
+    };
 
-    // Retorne os dados do usuário junto com o token
-    return Results.Ok(new { Token = token, User = existingUser });
+    return Results.Ok(new { Token = token, User = userWithoutPassword });
 });
+
 
 app.MapPost("/passwordForgotten", async (string email, [FromServices] ApplicationDbContext dbContext) =>
 {
