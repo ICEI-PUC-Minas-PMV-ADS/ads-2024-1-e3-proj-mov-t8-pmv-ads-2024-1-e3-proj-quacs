@@ -8,11 +8,9 @@ const SideOpenedMenu = ({ toggleMenu }) => {
   const handleLogout = () => {
     navigation.navigate('LoginPage');
   };
-  /*
   const handleProfile = () => {
-    navigation.navigate('ProfileScreen');
+    navigation.navigate('ProfileEditPage');
   };
-  */
 
   return (
     <View style={styles.abertoLayout}>
@@ -29,13 +27,13 @@ const SideOpenedMenu = ({ toggleMenu }) => {
         source={require("../assets/linha-de-divisao.png")}
       />
       <View style={styles.acoesMenuAberto}>
+      <TouchableOpacity onPress={handleProfile}>
         <Image
           style={styles.iconePerfil}
           source={require("../assets/icone-perfil.png")}
         />
-
           <Text style={styles.editarPerfil}>Profile</Text>
-
+          </TouchableOpacity>
         <Image
           style={styles.iconeComunidades}
           source={require("../assets/icone-grupos.png")}

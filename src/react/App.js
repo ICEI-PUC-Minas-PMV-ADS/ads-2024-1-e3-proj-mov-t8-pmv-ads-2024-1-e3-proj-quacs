@@ -6,6 +6,7 @@ import LoginPage from './screens/LoginPage';
 import HomePage from './screens/HomePage';
 import CadastroUsuario from './screens/CadastroUsuario';
 import PasswordForgot from './screens/PasswordForgot';
+import handleProfile from './screens/ProfileEditPage';
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +19,7 @@ const App = () => {
           <Stack.Screen name="HomePage" component={HomePage} />
           <Stack.Screen name="CadastroUsuario" component={CadastroUsuario} />
           <Stack.Screen name="PasswordForgot" component={PasswordForgot} />
+          <Stack.Screen name="ProfileEditPage" component={handleProfile} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>
