@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\mathe\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs\\src\\backend\\quacsBackEnd\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mathe\\AppData\\Local\\SourceServer\\cc79a904affc96ae5189e50aa450f64f4fd8f7b3e6c03e41a19065edb354c314\\src\\backend\\quacsBackEnd\\quacsBackEnd\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ED622AE2-0BFD-4CB1-98E7-5C97D024A158}|quacsBackEnd\\quacsBackEnd.csproj|c:\\users\\mathe\\source\\repos\\icei-puc-minas-pmv-ads\\ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs\\src\\backend\\quacsbackend\\quacsbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED622AE2-0BFD-4CB1-98E7-5C97D024A158}|quacsBackEnd\\quacsBackEnd.csproj|solutionrelative:quacsbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +41,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mathe\\AppData\\Local\\SourceServer\\cc79a904affc96ae5189e50aa450f64f4fd8f7b3e6c03e41a19065edb354c314\\src\\backend\\quacsBackEnd\\quacsBackEnd\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\cc79a904affc96ae5189e50aa450f64f4fd8f7b3e6c03e41a19065edb354c314\\src\\backend\\quacsBackEnd\\quacsBackEnd\\Program.cs",
+              "ToolTip": "C:\\Users\\mathe\\AppData\\Local\\SourceServer\\cc79a904affc96ae5189e50aa450f64f4fd8f7b3e6c03e41a19065edb354c314\\src\\backend\\quacsBackEnd\\quacsBackEnd\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\cc79a904affc96ae5189e50aa450f64f4fd8f7b3e6c03e41a19065edb354c314\\src\\backend\\quacsBackEnd\\quacsBackEnd\\Program.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAkwFMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T04:56:44.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\mathe\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs\\src\\backend\\quacsBackEnd\\quacsBackEnd\\Models\\User.cs",
               "RelativeDocumentMoniker": "quacsBackEnd\\Models\\User.cs",
@@ -46,12 +62,11 @@
               "RelativeToolTip": "quacsBackEnd\\Models\\User.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAgwCAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T02:31:10.502Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-10T02:31:10.502Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Utilities.cs",
               "DocumentMoniker": "C:\\Users\\mathe\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs\\src\\backend\\quacsBackEnd\\quacsBackEnd\\Classes\\Utilities.cs",
               "RelativeDocumentMoniker": "quacsBackEnd\\Classes\\Utilities.cs",
@@ -59,25 +74,23 @@
               "RelativeToolTip": "quacsBackEnd\\Classes\\Utilities.cs",
               "ViewState": "AQIAADMAAAAAAAAAAAAkwEoAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T00:13:30.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T00:13:30.632Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mathe\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs\\src\\backend\\quacsBackEnd\\quacsBackEnd\\Program.cs",
               "RelativeDocumentMoniker": "quacsBackEnd\\Program.cs",
               "ToolTip": "C:\\Users\\mathe\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs\\src\\backend\\quacsBackEnd\\quacsBackEnd\\Program.cs",
               "RelativeToolTip": "quacsBackEnd\\Program.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAkwEYAAAAhAAAA",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAzwGYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T05:25:26.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T05:25:26.095Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\mathe\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs\\src\\backend\\quacsBackEnd\\quacsBackEnd\\appsettings.json",
               "RelativeDocumentMoniker": "quacsBackEnd\\appsettings.json",
