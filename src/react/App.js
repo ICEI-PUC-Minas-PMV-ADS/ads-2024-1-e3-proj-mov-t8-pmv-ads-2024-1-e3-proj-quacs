@@ -8,6 +8,8 @@ import CadastroUsuario from './screens/CadastroUsuario';
 import PasswordForgot from './screens/PasswordForgot';
 import handleProfile from './screens/ProfileEditPage';
 
+import SettingsScreen from './screens/SettingsScreen';
+
 const Stack = createNativeStackNavigator();
 
 const App = () => {
@@ -20,6 +22,8 @@ const App = () => {
           <Stack.Screen name="CadastroUsuario" component={CadastroUsuario} />
           <Stack.Screen name="PasswordForgot" component={PasswordForgot} />
           <Stack.Screen name="ProfileEditPage" component={handleProfile} />
+
+          <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>

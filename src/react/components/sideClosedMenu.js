@@ -6,7 +6,7 @@ const SideClosedMenu = ({ toggleMenu }) => {
   return (
     <View style={styles.menuPosition}>
         <Image
-        style={styles.configuraesIcon}
+        style={styles.configuracoesIcon}
           source={require("../assets/configuracoes-home.png")}
         />
         <Image
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     backgroundColor: "rgba(78, 80, 88, 0.48)",
   },
-  configuraesIcon: {
+  configuracoesIcon: {
     top: 770,
     left: 12,
     width: 35,

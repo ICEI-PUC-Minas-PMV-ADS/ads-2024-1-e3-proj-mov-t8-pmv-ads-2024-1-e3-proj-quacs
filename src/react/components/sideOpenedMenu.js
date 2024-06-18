@@ -11,6 +11,9 @@ const SideOpenedMenu = ({ toggleMenu }) => {
   const handleProfile = () => {
     navigation.navigate('ProfileEditPage');
   };
+  const handleSettings = () => {
+    navigation.navigate('SettingsScreen');
+  };
 
   return (
     <View style={styles.abertoLayout}>
@@ -39,10 +42,14 @@ const SideOpenedMenu = ({ toggleMenu }) => {
           source={require("../assets/icone-grupos.png")}
         />
         <Text style={styles.comunidades}>Comunidades</Text>
+
+        <TouchableOpacity onPress={handleSettings}>
         <Image
           style={styles.iconeConfiguracoes}
           source={require("../assets/configuracoes.png")}
         />
+        </TouchableOpacity>
+
         <Text style={styles.configuraes}>Configurações</Text>
       </View>
       <TouchableOpacity onPress={handleLogout}>

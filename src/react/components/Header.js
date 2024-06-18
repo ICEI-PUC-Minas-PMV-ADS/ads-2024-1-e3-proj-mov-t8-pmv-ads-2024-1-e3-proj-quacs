@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { Appbar } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
-import { useTheme } from '../context/ThemeContext';
 
 const Header = ({ title, goBack, children }) => {
   const navigation = useNavigation();
