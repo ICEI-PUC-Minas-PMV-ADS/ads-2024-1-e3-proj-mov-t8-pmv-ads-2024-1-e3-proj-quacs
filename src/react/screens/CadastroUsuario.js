@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, ActivityIndicator } from 'react-native';
 import { Image } from 'react-native';
+import { Color, FontFamily, FontSize, Border } from '../GlobalStyles'; // Supondo que você tenha um arquivo de estilos globais
 
 const styles = StyleSheet.create({
   container: {
@@ -8,25 +9,59 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 20,
+    backgroundColor: Color.colorWhite, 
+  },
+  header: {
+    alignItems: 'center',
+    backgroundColor: '#2878bb',
+    width: '100%',
+    height: 170,
+    padding: 20,
+    marginBottom: 20,
+  },
+  logo: {
+    width: 200,
+    height: 130,
+  },
+  title: {
+    marginBottom: 20,
+    fontSize: FontSize.size_mid,
+    color: '#333333',
   },
   input: {
     height: 40,
     width: '100%',
-    borderColor: 'black',
+    borderColor: Color.colorLightgray,
     borderWidth: 1,
     marginBottom: 20,
     paddingHorizontal: 10,
+    borderRadius: 4,
+    backgroundColor: '#f7f7f7',
   },
   button: {
-    backgroundColor: 'black',
+    backgroundColor: Color.colorGray,
     alignItems: 'center',
     width: 300,
     padding: 10,
-    borderRadius: 20,
+    borderRadius: Border.br_9980xl,
     marginBottom: 10,
   },
   buttonText: {
-    color: 'white',
+    color: Color.colorWhite,
+    fontSize: FontSize.size_mini,
+  },
+  linkText: {
+    color: '#1d9bf0',
+    fontSize: FontSize.size_mini,
+  },
+  birthDateContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+  },
+  birthDateInput: {
+    flex: 1,
+    marginRight: 5,
   },
 });
 
@@ -82,15 +117,13 @@ const CadastroUsuario = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <View style={{ alignItems: 'center', backgroundColor: '#2878bb', width: 400, height: 170, padding: 20, marginBottom: 20 }}>
+      <View style={styles.header}>
         <Image
           source={require('../assets/logo.png')} 
-          style={{ width: 200, height: 130 }} 
+          style={styles.logo} 
         />
       </View>
-      <Text style={{ marginBottom: 20, fontSize: 24 }}>
-       Cadastre-se
-      </Text>
+      <Text style={styles.title}>Cadastre-se</Text>
       <TextInput
         style={styles.input}
         value={nome}
@@ -102,6 +135,7 @@ const CadastroUsuario = ({ navigation }) => {
         value={email}
         onChangeText={setEmail}
         placeholder="E-mail"
+        keyboardType="email-address"
       />
       <TextInput
         style={styles.input}
@@ -116,21 +150,21 @@ const CadastroUsuario = ({ navigation }) => {
         onChangeText={setDescription}
         placeholder="Descrição"
       />
-      <View style={{ flexDirection: 'row' }}>
+      <View style={styles.birthDateContainer}>
         <TextInput
-          style={[styles.input, { width: '20%', marginRight: 5 }]}
+          style={[styles.input, styles.birthDateInput]}
           value={birthDate.day}
           onChangeText={(text) => handleBirthDateChange(text, 'day')}
           placeholder="DD"
         />
         <TextInput
-          style={[styles.input, { width: '20%', marginRight: 5 }]}
+          style={[styles.input, styles.birthDateInput]}
           value={birthDate.month}
           onChangeText={(text) => handleBirthDateChange(text, 'month')}
           placeholder="MM"
         />
         <TextInput
-          style={[styles.input, { width: '30%' }]}
+          style={[styles.input, { flex: 2 }]}
           value={birthDate.year}
           onChangeText={(text) => handleBirthDateChange(text, 'year')}
           placeholder="YYYY"
@@ -144,12 +178,14 @@ const CadastroUsuario = ({ navigation }) => {
       />
       <TouchableOpacity style={styles.button} onPress={handleSubmit} disabled={isLoading}>
         {isLoading ? (
-          <ActivityIndicator color="white" />
+          <ActivityIndicator color={Color.colorWhite} />
         ) : (
           <Text style={styles.buttonText}>Criar Conta</Text>
         )}
       </TouchableOpacity>
-      <Text>Já tem uma conta? <Text style={{ color: "#1d9bf0" }} onPress={() => navigation.navigate('LoginPage')}>Faça Login</Text></Text>
+      <TouchableOpacity onPress={() => navigation.navigate('LoginPage')}>
+        <Text style={styles.linkText}>Já tem uma conta? Faça Login</Text>
+      </TouchableOpacity>
     </View>
   );
 };
