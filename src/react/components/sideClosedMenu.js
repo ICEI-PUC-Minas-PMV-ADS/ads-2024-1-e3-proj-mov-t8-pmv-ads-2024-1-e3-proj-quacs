@@ -1,25 +1,34 @@
 import React from "react";
 import { StyleSheet, View, Image, TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import { Color, Border } from "../GlobalStyles";
 
 const SideClosedMenu = ({ toggleMenu }) => {
+  const navigation = useNavigation();
+  const handleSettings = () => {
+    navigation.navigate("SettingsScreen");
+  };
+
   return (
     <View style={styles.menuPosition}>
+      <TouchableOpacity onPress={handleSettings}>
         <Image
-        style={styles.configuracoesIcon}
+          style={styles.configuracoesIcon}
           source={require("../assets/configuracoes-home.png")}
         />
+      </TouchableOpacity>
+
+      <Image
+        style={styles.iconeGrupos}
+        source={require("../assets/icone-grupos-home.png")}
+      />
+      <View style={styles.lineDivision} />
+      <TouchableOpacity onPress={toggleMenu} style={styles.perfil}>
         <Image
-          style={styles.iconeGrupos}
-          source={require("../assets/icone-grupos-home.png")}
+          style={styles.fotoPerfilIcon}
+          source={require("../assets/foto-perfil.png")}
         />
-        <View style={styles.lineDivision} />
-        <TouchableOpacity onPress={toggleMenu} style={styles.perfil}>
-          <Image
-            style={styles.fotoPerfilIcon}
-            source={require("../assets/foto-perfil.png")}
-          />
-        </TouchableOpacity>
+      </TouchableOpacity>
     </View>
   );
 };

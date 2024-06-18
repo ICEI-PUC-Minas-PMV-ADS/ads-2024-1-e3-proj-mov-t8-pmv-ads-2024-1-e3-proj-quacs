@@ -1,4 +1,4 @@
-// Profile.js
+
 import React, { useState } from 'react';
 import { View, StyleSheet, Image } from 'react-native';
 import { Text, Button } from 'react-native-paper';
