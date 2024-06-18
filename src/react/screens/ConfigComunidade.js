@@ -1,0 +1,1 @@
+<Text>CONFIGURAÇÃO DE COMUNIDADE</Text>
