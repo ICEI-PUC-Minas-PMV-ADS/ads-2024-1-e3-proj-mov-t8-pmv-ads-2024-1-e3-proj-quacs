@@ -1,11 +1,23 @@
 import React from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
-import { List, Switch, Text } from 'react-native-paper';
+import { List, Switch, Text, Menu, Button, IconButton } from 'react-native-paper';
 
 const SettingsScreen = () => {
-  const [isSwitchOn, setIsSwitchOn] = React.useState(false);
+  const [isNotificationsEnabled, setIsNotificationsEnabled] = React.useState(false);
+  const [isDarkThemeEnabled, setIsDarkThemeEnabled] = React.useState(false);
+  const [menuVisible, setMenuVisible] = React.useState(false);
+  const [selectedLanguage, setSelectedLanguage] = React.useState('English');
 
-  const onToggleSwitch = () => setIsSwitchOn(!isSwitchOn);
+  const toggleNotifications = () => setIsNotificationsEnabled(!isNotificationsEnabled);
+  const toggleDarkTheme = () => setIsDarkThemeEnabled(!isDarkThemeEnabled);
+
+  const openMenu = () => setMenuVisible(true);
+  const closeMenu = () => setMenuVisible(false);
+
+  const changeLanguage = (language) => {
+    setSelectedLanguage(language);
+    closeMenu();
+  };
 
   return (
     <ScrollView>
@@ -14,19 +26,35 @@ const SettingsScreen = () => {
         <List.Item
           title="Enable Notifications"
           right={() => (
-            <Switch value={isSwitchOn} onValueChange={onToggleSwitch} />
+            <Switch value={isNotificationsEnabled} onValueChange={toggleNotifications} />
           )}
         />
         <List.Item
           title="Dark Theme"
           right={() => (
-            <Switch value={isSwitchOn} onValueChange={onToggleSwitch} />
+            <Switch value={isDarkThemeEnabled} onValueChange={toggleDarkTheme} />
           )}
         />
         <List.Item
           title="Language"
-          description="English"
-          right={() => <Text>Change</Text>}
+          description={selectedLanguage}
+          right={() => (
+            <Menu
+              visible={menuVisible}
+              onDismiss={closeMenu}
+              anchor={
+                <IconButton
+                  icon="chevron-down"
+                  size={24}
+                  onPress={openMenu}
+                />
+              }
+            >
+              <Menu.Item onPress={() => changeLanguage('English')} title="English" />
+              <Menu.Item onPress={() => changeLanguage('Spanish')} title="Spanish" />
+              <Menu.Item onPress={() => changeLanguage('French')} title="French" />
+            </Menu>
+          )}
         />
       </List.Section>
     </ScrollView>
