@@ -48,9 +48,9 @@ const SideOpenedMenu = ({ toggleMenu }) => {
           style={styles.iconeConfiguracoes}
           source={require("../assets/configuracoes.png")}
         />
-        </TouchableOpacity>
-
         <Text style={styles.configuraes}>Configurações</Text>
+        </TouchableOpacity>
+        
       </View>
       <TouchableOpacity onPress={handleLogout}>
         <Text style={styles.desconectar}>Desconectar</Text>
