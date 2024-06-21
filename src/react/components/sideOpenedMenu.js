@@ -9,7 +9,7 @@ const SideOpenedMenu = ({ toggleMenu }) => {
     navigation.navigate('LoginPage');
   };
   const handleProfile = () => {
-    navigation.navigate('ProfileEditPage');
+    navigation.navigate('ProfileScreen');
   };
   const handleSettings = () => {
     navigation.navigate('SettingsScreen');

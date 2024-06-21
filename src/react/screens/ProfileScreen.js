@@ -1,26 +1,35 @@
+import React from "react";
+import { View, StyleSheet } from "react-native";
+import { Appbar, Avatar, Text, Title, Subheading } from "react-native-paper";
 
-import React, { useState } from 'react';
-import { View, StyleSheet, Image } from 'react-native';
-import { Text, Button } from 'react-native-paper';
-
-const Profile = () => {
-  const user = {
-    name: 'Nome de Usuario',
-    photo: 'https://via.placeholder.com/150',
-    followers: 120,
-    following: 150,
-  };
-
+const ProfileScreen = () => {
   return (
     <View style={styles.container}>
-        <View style={styles.profileContainer}>
-          <Image source={{ uri: user.photo }} style={styles.profilePhoto} />
-          <Text style={styles.name}>{user.name}</Text>
-          <View style={styles.followContainer}>
-            <Text style={styles.followText}>Seguidores: {user.followers}</Text>
-            <Text style={styles.followText}> Seguindo: {user.following}</Text>
+      <Appbar.Header style={styles.header}>
+        <Avatar.Icon
+          size={100}
+          icon="account"
+          color="#FFFFFF"
+          style={styles.avatar}
+        />
+        <View style={styles.infoContainer}>
+          <View style={styles.nameContainer}>
+            <Title style={styles.profileName}>Nome do Perfil</Title>
+            <Subheading style={styles.username}>@usuario</Subheading>
+          </View>
+
+          <View style={styles.followInfo}>
+            <View style={styles.followBlock}>
+              <Text style={styles.followNumber}>150</Text>
+              <Text style={styles.followLabel}>Seguidores</Text>
+            </View>
+            <View style={styles.followBlock}>
+              <Text style={styles.followNumber}>100</Text>
+              <Text style={styles.followLabel}>Seguindo</Text>
+            </View>
           </View>
         </View>
+      </Appbar.Header>
     </View>
   );
 };
@@ -28,32 +37,52 @@ const Profile = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20,
+    backgroundColor: "#D3D3D3",
   },
-  profileContainer: {
-    alignItems: 'center',
+  header: {
+    backgroundColor: "#333",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "row",
+    paddingVertical: 0,
   },
-  profilePhoto: {
-    width: 150,
-    height: 150,
-    borderRadius: 75,
-    marginBottom: 20,
+  avatar: {
+    backgroundColor: "#00008B", // Azul escuro
   },
-  name: {
+  infoContainer: {
+    alignItems: "center",
+  },
+  nameContainer: {
+    alignItems: "center",
+  },
+  username: {
+    fontSize: 18,
+    color: "#000000", // Preto
+  },
+  profileName: {
+    fontWeight: "bold",
     fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 10,
+    marginTop: 10,
+    color: "#000000", // Preto
   },
-  followContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    width: '100%',
+  followInfo: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    width: "60%",
+    marginTop: 10,
   },
-  followText: {
-    fontSize: 16,
+  followBlock: {
+    alignItems: "center",
+  },
+  followNumber: {
+    fontWeight: "bold",
+    fontSize: 18,
+    color: "#000000", // Preto
+  },
+  followLabel: {
+    fontSize: 14,
+    color: "#000000", // Preto
   },
 });
 
-export default Profile;
+export default ProfileScreen;
