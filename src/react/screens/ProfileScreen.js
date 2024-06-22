@@ -25,6 +25,9 @@ const ProfileScreen = ({ navigation }) => {
             <Text>Seguindo</Text>
           </View>
         </View>
+
+        <View style={styles.divider} />
+
         <Button 
           mode="contained" 
           style={styles.editButton} 
@@ -41,7 +44,7 @@ const ProfileScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f0f0f0', // Fundo cinza claro
+    backgroundColor: '#808080', // Fundo cinza
   },
   header: {
     backgroundColor: '#424242', // Fundo cinza escuro
@@ -83,6 +86,12 @@ const styles = StyleSheet.create({
   },
   editButton: {
     marginTop: 20,
+  },
+  divider: {
+    height: 1,
+    width: '100%',
+    backgroundColor: '#424242', // Cor da linha divisória
+    marginVertical: 20, // Espaço vertical
   },
 });
 
