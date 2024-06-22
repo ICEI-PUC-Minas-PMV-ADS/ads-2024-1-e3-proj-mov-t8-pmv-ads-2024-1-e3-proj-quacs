@@ -1,87 +1,88 @@
-import React from "react";
-import { View, StyleSheet } from "react-native";
-import { Appbar, Avatar, Text, Title, Subheading } from "react-native-paper";
+import React from 'react';
+import { View, StyleSheet, Image, ScrollView } from 'react-native';
+import { Text, Appbar, Button } from 'react-native-paper';
 
-const ProfileScreen = () => {
+const ProfileScreen = ({ navigation }) => {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <Appbar.Header style={styles.header}>
-        <Avatar.Icon
-          size={100}
-          icon="account"
-          color="#FFFFFF"
-          style={styles.avatar}
+        <Appbar.Content title="Profile" titleStyle={styles.headerTitle} />
+      </Appbar.Header>
+      <View style={styles.profileContainer}>
+        <Image
+          source={{ uri: 'https://via.placeholder.com/150' }}
+          style={styles.profileImage}
         />
-        <View style={styles.infoContainer}>
-          <View style={styles.nameContainer}>
-            <Title style={styles.profileName}>Nome do Perfil</Title>
-            <Subheading style={styles.username}>@usuario</Subheading>
-          </View>
-
+        <Text style={styles.profileName}>John Doe</Text>
+        <Text style={styles.username}>@johndoe</Text>
+        <View style={styles.followContainer}>
           <View style={styles.followInfo}>
-            <View style={styles.followBlock}>
-              <Text style={styles.followNumber}>150</Text>
-              <Text style={styles.followLabel}>Seguidores</Text>
-            </View>
-            <View style={styles.followBlock}>
-              <Text style={styles.followNumber}>100</Text>
-              <Text style={styles.followLabel}>Seguindo</Text>
-            </View>
+            <Text style={styles.followCount}>150</Text>
+            <Text>Seguidores</Text>
+          </View>
+          <View style={styles.followInfo}>
+            <Text style={styles.followCount}>180</Text>
+            <Text>Seguindo</Text>
           </View>
         </View>
-      </Appbar.Header>
-    </View>
+        <Button 
+          mode="contained" 
+          style={styles.editButton} 
+          buttonColor="#1E3A8A" // Azul naval
+          onPress={() => navigation.navigate('ProfileEditPage')}
+        >
+          Editar Perfil
+        </Button>
+      </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#D3D3D3",
+    backgroundColor: '#f0f0f0', // Fundo cinza claro
   },
   header: {
-    backgroundColor: "#333",
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "row",
-    paddingVertical: 0,
+    backgroundColor: '#424242', // Fundo cinza escuro
   },
-  avatar: {
-    backgroundColor: "#00008B", // Azul escuro
+  headerTitle: {
+    color: '#FFFFFF', // Texto branco
   },
-  infoContainer: {
-    alignItems: "center",
+  profileContainer: {
+    alignItems: 'center',
+    padding: 20,
   },
-  nameContainer: {
-    alignItems: "center",
+  profileImage: {
+    width: 150,
+    height: 150,
+    borderRadius: 75,
+    marginBottom: 10,
+  },
+  profileName: {
+    fontSize: 24,
+    fontWeight: 'bold',
   },
   username: {
     fontSize: 18,
-    color: "#000000", // Preto
+    color: 'gray',
+    marginBottom: 20,
   },
-  profileName: {
-    fontWeight: "bold",
-    fontSize: 24,
-    marginTop: 10,
-    color: "#000000", // Preto
+  followContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    width: '60%',
+    marginBottom: 20,
   },
   followInfo: {
-    flexDirection: "row",
-    justifyContent: "space-around",
-    width: "60%",
-    marginTop: 10,
+    alignItems: 'center',
   },
-  followBlock: {
-    alignItems: "center",
-  },
-  followNumber: {
-    fontWeight: "bold",
+  followCount: {
     fontSize: 18,
-    color: "#000000", // Preto
+    fontWeight: 'bold',
   },
-  followLabel: {
-    fontSize: 14,
-    color: "#000000", // Preto
+  editButton: {
+    marginTop: 20,
   },
 });
 
