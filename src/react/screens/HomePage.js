@@ -1,9 +1,59 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Text, TouchableWithoutFeedback } from "react-native";
+import { StyleSheet, View, Text, TouchableWithoutFeedback, SafeAreaView, FlatList } from "react-native";
 import { Image } from "expo-image";
 import { Color, Border, FontFamily } from "../GlobalStyles";
 import SideClosedMenu from "../components/sideClosedMenu";
-import SideOpenedMenu from "../components/sideOpenedMenu"; // Importar o SideOpenedMenu
+import SideOpenedMenu from "../components/sideOpenedMenu";
+
+import PostComponent from "../components/PostComponent";
+
+
+const MenuHorizontalGrupos = () => (
+  <View style={styles.menuHorizontalGrupos}>
+    <Image
+      style={[styles.supportIcon, styles.supportIconLayout]}
+      contentFit="cover"
+      source={require("../assets/support.png")}
+    />
+    <View style={[styles.grupo4Parent, styles.supportIconLayout]}>
+      <View style={[styles.grupo4, styles.grupoLayout]}>
+        <View style={[styles.grupo2, styles.grupo2Position]} />
+      </View>
+      <View style={[styles.grupo3, styles.grupoPosition]}>
+        <View style={[styles.grupoSelected1, styles.grupoPosition]} />
+        <View style={styles.grupo1} />
+      </View>
+      <View style={[styles.grupo21, styles.grupoLayout]}>
+        <View style={[styles.grupo2, styles.grupo2Position]} />
+      </View>
+      <View style={[styles.grupo11, styles.grupoPosition]}>
+        <View style={[styles.grupoSelected1, styles.grupoPosition]} />
+        <View style={styles.grupo1} />
+      </View>
+    </View>
+  </View>
+);
+
+const BuscaComunidade = () => (
+  <View style={[styles.buscaComunidade, styles.rectangleLayout]}>
+    <View style={[styles.rectangle, styles.rectangleLayout]} />
+    <Text style={styles.busqueUmaNova}>Busque uma nova comunidade</Text>
+  </View>
+);
+
+const Publicacoes = () => (
+  <View style={styles.publicacoes}>
+    <View style={[styles.publiEx3, styles.publiLayout1]}>
+      <View style={[styles.publiEx31, styles.publiBg]} />
+    </View>
+    <View style={[styles.publiEx2, styles.publiLayout]}>
+      <View style={[styles.publiEx21, styles.publiLayout]} />
+    </View>
+    <View style={styles.publiPosition}>
+      <View style={[styles.publiEx11, styles.publiPosition]} />
+    </View>
+  </View>
+);
 
 const PaginaInicial = () => {
   const [menuAberto, setMenuAberto] = useState(false);
@@ -18,48 +68,28 @@ const PaginaInicial = () => {
     }
   };
 
+  const postsData = [
+    { id: 1, title: "First Post", body: "This is the body of the first post." },
+    { id: 2, title: "Second Post", body: "This is the body of the second post." },
+    { id: 3, title: "Third Post", body: "This is the body of the third post." },
+  ];
+
+  const renderItem = ({ item }) => <PostComponent post={item} />;
+
   return (
     <TouchableWithoutFeedback onPress={closeMenu}>
       <View style={styles.paginaInicial}>
         <View style={styles.fundo} />
-        <View style={styles.publicacoes}>
-          <View style={[styles.publiEx3, styles.publiLayout1]}>
-            <View style={[styles.publiEx31, styles.publiBg]} />
-          </View>
-          <View style={[styles.publiEx2, styles.publiLayout]}>
-            <View style={[styles.publiEx21, styles.publiLayout]} />
-          </View>
-          <View style={styles.publiPosition}>
-            <View style={[styles.publiEx11, styles.publiPosition]} />
-          </View>
-        </View>
-        <View style={styles.menuHorizontalGrupos}>
-          <Image
-            style={[styles.supportIcon, styles.supportIconLayout]}
-            contentFit="cover"
-            source={require("../assets/support.png")}
+        <Publicacoes />
+        <MenuHorizontalGrupos />
+        <BuscaComunidade />
+        <SafeAreaView style={styles.postsContainer}>
+          <FlatList
+            data={postsData}
+            renderItem={renderItem}
+            keyExtractor={(item) => item.id.toString()}
           />
-          <View style={[styles.grupo4Parent, styles.supportIconLayout]}>
-            <View style={[styles.grupo4, styles.grupoLayout]}>
-              <View style={[styles.grupo2, styles.grupo2Position]} />
-            </View>
-            <View style={[styles.grupo3, styles.grupoPosition]}>
-              <View style={[styles.grupoSelected1, styles.grupoPosition]} />
-              <View style={styles.grupo1} />
-            </View>
-            <View style={[styles.grupo21, styles.grupoLayout]}>
-              <View style={[styles.grupo2, styles.grupo2Position]} />
-            </View>
-            <View style={[styles.grupo11, styles.grupoPosition]}>
-              <View style={[styles.grupoSelected1, styles.grupoPosition]} />
-              <View style={styles.grupo1} />
-            </View>
-          </View>
-        </View>
-        <View style={[styles.buscaComunidade, styles.rectangleLayout]}>
-          <View style={[styles.rectangle, styles.rectangleLayout]} />
-          <Text style={styles.busqueUmaNova}>Busque uma nova comunidade</Text>
-        </View>
+        </SafeAreaView>
         {menuAberto ? (
           <SideOpenedMenu toggleMenu={toggleMenu} />
         ) : (
@@ -118,18 +148,6 @@ const styles = StyleSheet.create({
   rectangleLayout: {
     height: 28,
     width: 299,
-    position: "absolute",
-  },
-  menuPosition: {
-    width: 55,
-    left: 0,
-    height: 843,
-    top: 0,
-    position: "absolute",
-  },
-  perfilLayout: {
-    height: 30,
-    width: 30,
     position: "absolute",
   },
   fundo: {
@@ -250,9 +268,14 @@ const styles = StyleSheet.create({
   paginaInicial: {
     flex: 1,
     width: "100%",
-    height: 882,
+    height: "100%",
     overflow: "hidden",
     backgroundColor: Color.colorWhite,
+  },
+  postsContainer: {
+    flex: 1,
+    marginTop: 150, 
+    marginLeft: 50,
   },
 });
 

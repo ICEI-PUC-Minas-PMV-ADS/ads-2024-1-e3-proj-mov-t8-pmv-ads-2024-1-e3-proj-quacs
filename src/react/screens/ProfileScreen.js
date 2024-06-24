@@ -6,6 +6,7 @@ const ProfileScreen = ({ navigation }) => {
   return (
     <ScrollView style={styles.container}>
       <Appbar.Header style={styles.header}>
+      <Appbar.BackAction color="#FFFFFF" onPress={() => navigation.goBack()}/>
         <Appbar.Content title="Profile" titleStyle={styles.headerTitle} />
       </Appbar.Header>
       <View style={styles.profileContainer}>
@@ -31,7 +32,7 @@ const ProfileScreen = ({ navigation }) => {
         <Button 
           mode="contained" 
           style={styles.editButton} 
-          buttonColor="#1E3A8A" // Azul naval
+          buttonColor="#1E3A8A"
           onPress={() => navigation.navigate('ProfileEditPage')}
         >
           Editar Perfil
@@ -44,13 +45,13 @@ const ProfileScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#808080', // Fundo cinza
+    backgroundColor: '#808080',
   },
   header: {
-    backgroundColor: '#424242', // Fundo cinza escuro
+    backgroundColor: '#424242', 
   },
   headerTitle: {
-    color: '#FFFFFF', // Texto branco
+    color: '#FFFFFF',
   },
   profileContainer: {
     alignItems: 'center',
@@ -90,8 +91,8 @@ const styles = StyleSheet.create({
   divider: {
     height: 1,
     width: '100%',
-    backgroundColor: '#424242', // Cor da linha divisória
-    marginVertical: 20, // Espaço vertical
+    backgroundColor: '#424242', 
+    marginVertical: 20, 
   },
 });
 
