@@ -1,29 +1,18 @@
 message: Please cite this software using these metadata.
-title:
+title: Rede Social Quacs
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+  - family-names: Oliveira Silva
+    given-names: Matheus Henrique
+  - family-names: Muniz Ramos
+    given-names: Emily
+  - family-names: Batista
+    given-names: Guilherme
+  - family-names: Queiroz Cheloni
+    given-names: Giovani
 keywords:
-  - 
-  - 
-repository-code: 
+  - Comunidades
+  - Rede Social
+  - Comunicação 
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/ads-2024-1-e3-proj-mov-t8-pmv-ads-2024-1-e3-proj-quacs.git
 version: 1.0.0
-date-released: 2023-10-31
+date-released: 2024-06-23
