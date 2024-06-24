@@ -8,6 +8,9 @@ const SideClosedMenu = ({ toggleMenu }) => {
   const handleSettings = () => {
     navigation.navigate("SettingsScreen");
   };
+  const handleCommunities = () => {
+    navigation.navigate("CommunityScreen");
+  };
 
   return (
     <View style={styles.menuPosition}>
@@ -18,10 +21,13 @@ const SideClosedMenu = ({ toggleMenu }) => {
         />
       </TouchableOpacity>
 
-      <Image
-        style={styles.iconeGrupos}
-        source={require("../assets/icone-grupos-home.png")}
-      />
+      <TouchableOpacity onPress={handleCommunities}>
+        <Image
+          style={styles.iconeGrupos}
+          source={require("../assets/icone-grupos-home.png")}
+        />
+      </TouchableOpacity>
+
       <View style={styles.lineDivision} />
       <TouchableOpacity onPress={toggleMenu} style={styles.perfil}>
         <Image
